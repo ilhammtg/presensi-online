@@ -1,0 +1,5292 @@
+{
+  "sync_timestamp": "2026-09-25T00:00:00Z",
+  "academic_year": "2026/2027",
+  "semester_type": 1,
+  "faculties": [
+    {
+      "code": "FIKOM",
+      "name": "Fakultas Ilmu Komputer",
+      "study_programs": [
+        {
+          "code": "INF",
+          "name": "S1 Informatika"
+        },
+        {
+          "code": "IM",
+          "name": "S1 Informatika Medis"
+        }
+      ]
+    }
+  ],
+  "buildings": [
+    {
+      "code": "GEDUNG-FIKOM",
+      "name": "Gedung Fakultas Ilmu Komputer",
+      "rooms": [
+        {
+          "room_code": "L2",
+          "name": "Laboratorium L2",
+          "latitude": 5.19412,
+          "longitude": 96.7881,
+          "radius_meters": 80
+        },
+        {
+          "room_code": "L3",
+          "name": "Laboratorium L3",
+          "latitude": 5.19413,
+          "longitude": 96.78811,
+          "radius_meters": 80
+        },
+        {
+          "room_code": "LR",
+          "name": "Laboratorium LR",
+          "latitude": 5.19414,
+          "longitude": 96.78812,
+          "radius_meters": 80
+        },
+        {
+          "room_code": "R1",
+          "name": "Ruang Kuliah R1",
+          "latitude": 5.193754,
+          "longitude": 96.787516,
+          "radius_meters": 80
+        },
+        {
+          "room_code": "R2",
+          "name": "Ruang Kuliah R2",
+          "latitude": 5.193762,
+          "longitude": 96.787524,
+          "radius_meters": 80
+        },
+        {
+          "room_code": "R3",
+          "name": "Ruang Kuliah R3",
+          "latitude": 5.19377,
+          "longitude": 96.787532,
+          "radius_meters": 80
+        },
+        {
+          "room_code": "R4",
+          "name": "Ruang Kuliah R4",
+          "latitude": 5.193778,
+          "longitude": 96.78754,
+          "radius_meters": 80
+        },
+        {
+          "room_code": "R5",
+          "name": "Ruang Kuliah R5",
+          "latitude": 5.193786,
+          "longitude": 96.787548,
+          "radius_meters": 80
+        },
+        {
+          "room_code": "R6",
+          "name": "Ruang Kuliah R6",
+          "latitude": 5.193794,
+          "longitude": 96.787556,
+          "radius_meters": 80
+        },
+        {
+          "room_code": "RKU-1",
+          "name": "Ruang Kuliah Umum 1",
+          "latitude": 5.193802,
+          "longitude": 96.787564,
+          "radius_meters": 80
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "external_id": "SUPERADMIN01",
+      "name": "Administrator Sistem",
+      "email": "superadmin@kampus.ac.id",
+      "role": "superadmin",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "ADM-001",
+      "name": "Admin Prodi Informatika",
+      "email": "admin.ti@kampus.ac.id",
+      "role": "admin_prodi",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "ADM-IM-01",
+      "name": "Admin Prodi Informatika Medis",
+      "email": "admin.im@kampus.ac.id",
+      "role": "admin_prodi",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "0001018501",
+      "name": "Afriana, SE., MM",
+      "email": "afriana.mm@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0002018502",
+      "name": "Al Khaidar, M.Kom",
+      "email": "al.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0003018503",
+      "name": "Alfiya Zahara, S.Tr.Kom., M.Kom",
+      "email": "alfiya.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0004018504",
+      "name": "Athirah Rusadi, M.Kom",
+      "email": "athirah.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0005018505",
+      "name": "Budi Handoyo, M.Kom",
+      "email": "budi.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0006018506",
+      "name": "Dasril Azmi, M.Kom",
+      "email": "dasril.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0007018507",
+      "name": "Dedy Armiady, M.Kom",
+      "email": "dedy.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0008018508",
+      "name": "Dr. Imam Muslem R, M.Kom",
+      "email": "dr.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0009018509",
+      "name": "Dr. Iskandar, MA",
+      "email": "iskandar.ma@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0010018500",
+      "name": "Dr. Muhammad Iqbal, M.Ag",
+      "email": "dr.mag@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0011018501",
+      "name": "Dr. Najmuddin, MA",
+      "email": "najmuddin.ma@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0012018502",
+      "name": "Fitri Rizani, M.Kom",
+      "email": "fitri.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0013018503",
+      "name": "Hannan Asrawi, M.Kom",
+      "email": "hannan.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0014018504",
+      "name": "Heri Gustami, M.Kom",
+      "email": "heri.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0015018505",
+      "name": "Hermansyah, S.Kom",
+      "email": "hermansyah.skom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0016018506",
+      "name": "Ikramullah, M.Kom",
+      "email": "ikramullah.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0017018507",
+      "name": "Iqbal, M.Cs",
+      "email": "iqbal.mcs@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0018018508",
+      "name": "Iskandar Zulkarnaini, M.Kom",
+      "email": "iskandar.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0019018509",
+      "name": "Ledyana Fitriyani, M.Si",
+      "email": "ledyana.msi@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "0020018500",
+      "name": "M. Erfan Syah, M.Pd",
+      "email": "m.mpd@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0021018501",
+      "name": "M. Gunawan, M.Kom",
+      "email": "m.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0022018502",
+      "name": "M. Yusuf, S.S., M.S",
+      "email": "m.ms@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0023018503",
+      "name": "Muhammad Iqbal, M.Kom",
+      "email": "muhammad.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0024018504",
+      "name": "Mukhtar, M.Kom",
+      "email": "mukhtar.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "0025018505",
+      "name": "Munar, M.Kom",
+      "email": "munar.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0026018506",
+      "name": "Munazar, M.Kom",
+      "email": "munazar.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0027018507",
+      "name": "Nunung Nurjanah, M.Si",
+      "email": "nunung.msi@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0028018508",
+      "name": "Qamar Syafawi, M.Pd",
+      "email": "qamar.mpd@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0029018509",
+      "name": "Raihan Putri, SH., M.H",
+      "email": "raihan.mh@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "0030018500",
+      "name": "Raudhatul Hidayati, SH,.MH",
+      "email": "raudhatul.shmh@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0031018501",
+      "name": "Restu Reza, M.Kom",
+      "email": "restu.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0032018502",
+      "name": "Riski Maulana Martin, M.Sc",
+      "email": "riski.msc@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "0033018503",
+      "name": "Rivaul Muzammil, M.Kom",
+      "email": "rivaul.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0034018504",
+      "name": "Riyadhul Fajri, S.ST., M.Kom",
+      "email": "riyadhul.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0035018505",
+      "name": "Siti Ismi Takarina, M.Kom",
+      "email": "siti.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "0036018506",
+      "name": "Sriwinar, M.Kom",
+      "email": "sriwinar.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0037018507",
+      "name": "T. Rafli A, M.Sn",
+      "email": "t.msn@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "0038018508",
+      "name": "Zulkifli, M.Kom",
+      "email": "zulkifli.mkom@kampus.ac.id",
+      "role": "dosen",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552020001",
+      "name": "Rizki Aulia",
+      "email": "26552020001@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "26552020002",
+      "name": "Diki Maulida",
+      "email": "26552020002@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "26552020003",
+      "name": "Siti Fitriani",
+      "email": "26552020003@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "26552020004",
+      "name": "Putri Wardani",
+      "email": "26552020004@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "26552020005",
+      "name": "Zul Pratama",
+      "email": "26552020005@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "26552020006",
+      "name": "Nurul Iskandar",
+      "email": "26552020006@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "26552020007",
+      "name": "Teuku Hidayat",
+      "email": "26552020007@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "26552020008",
+      "name": "Intan Rahma",
+      "email": "26552020008@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "26552020009",
+      "name": "Syahrul Munandar",
+      "email": "26552020009@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "26552020010",
+      "name": "Rahmat Zulkarnain",
+      "email": "26552020010@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "25552020011",
+      "name": "Faisal Akbar",
+      "email": "25552020011@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "25552020012",
+      "name": "Maulana Suryani",
+      "email": "25552020012@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "25552020013",
+      "name": "Tari Ramadhan",
+      "email": "25552020013@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "25552020014",
+      "name": "Dewi Saputra",
+      "email": "25552020014@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "25552020015",
+      "name": "Ahmad Wulandari",
+      "email": "25552020015@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "25552020016",
+      "name": "Nadia Aulia",
+      "email": "25552020016@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "25552020017",
+      "name": "Bima Maulida",
+      "email": "25552020017@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "25552020018",
+      "name": "Muhammad Fitriani",
+      "email": "25552020018@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "25552020019",
+      "name": "Fajar Wardani",
+      "email": "25552020019@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "25552020020",
+      "name": "Cut Pratama",
+      "email": "25552020020@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "24552020021",
+      "name": "Rizki Iskandar",
+      "email": "24552020021@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "24552020022",
+      "name": "Diki Hidayat",
+      "email": "24552020022@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "24552020023",
+      "name": "Siti Rahma",
+      "email": "24552020023@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "24552020024",
+      "name": "Putri Munandar",
+      "email": "24552020024@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "24552020025",
+      "name": "Zul Zulkarnain",
+      "email": "24552020025@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "24552020026",
+      "name": "Nurul Akbar",
+      "email": "24552020026@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "24552020027",
+      "name": "Teuku Suryani",
+      "email": "24552020027@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "24552020028",
+      "name": "Intan Ramadhan",
+      "email": "24552020028@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "24552020029",
+      "name": "Syahrul Saputra",
+      "email": "24552020029@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "24552020030",
+      "name": "Rahmat Wulandari",
+      "email": "24552020030@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "24552020031",
+      "name": "Faisal Aulia",
+      "email": "24552020031@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "24552020032",
+      "name": "Maulana Maulida",
+      "email": "24552020032@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "24552020033",
+      "name": "Tari Fitriani",
+      "email": "24552020033@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "24552020034",
+      "name": "Dewi Wardani",
+      "email": "24552020034@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "24552020035",
+      "name": "Ahmad Pratama",
+      "email": "24552020035@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "23552020036",
+      "name": "Nadia Iskandar",
+      "email": "23552020036@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "23552020037",
+      "name": "Bima Hidayat",
+      "email": "23552020037@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "23552020038",
+      "name": "Muhammad Rahma",
+      "email": "23552020038@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "23552020039",
+      "name": "Fajar Munandar",
+      "email": "23552020039@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "23552020040",
+      "name": "Cut Zulkarnain",
+      "email": "23552020040@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "IM",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010041",
+      "name": "Rizki Akbar",
+      "email": "26552010041@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010042",
+      "name": "Diki Suryani",
+      "email": "26552010042@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010043",
+      "name": "Siti Ramadhan",
+      "email": "26552010043@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010044",
+      "name": "Putri Saputra",
+      "email": "26552010044@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010045",
+      "name": "Zul Wulandari",
+      "email": "26552010045@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010046",
+      "name": "Nurul Aulia",
+      "email": "26552010046@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010047",
+      "name": "Teuku Maulida",
+      "email": "26552010047@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010048",
+      "name": "Intan Fitriani",
+      "email": "26552010048@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010049",
+      "name": "Syahrul Wardani",
+      "email": "26552010049@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010050",
+      "name": "Rahmat Pratama",
+      "email": "26552010050@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010051",
+      "name": "Faisal Iskandar",
+      "email": "26552010051@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010052",
+      "name": "Maulana Hidayat",
+      "email": "26552010052@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010053",
+      "name": "Tari Rahma",
+      "email": "26552010053@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010054",
+      "name": "Dewi Munandar",
+      "email": "26552010054@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010055",
+      "name": "Ahmad Zulkarnain",
+      "email": "26552010055@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010056",
+      "name": "Nadia Akbar",
+      "email": "26552010056@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010057",
+      "name": "Bima Suryani",
+      "email": "26552010057@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010058",
+      "name": "Muhammad Ramadhan",
+      "email": "26552010058@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010059",
+      "name": "Fajar Saputra",
+      "email": "26552010059@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010060",
+      "name": "Cut Wulandari",
+      "email": "26552010060@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010061",
+      "name": "Rizki Aulia",
+      "email": "26552010061@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010062",
+      "name": "Diki Maulida",
+      "email": "26552010062@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010063",
+      "name": "Siti Fitriani",
+      "email": "26552010063@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010064",
+      "name": "Putri Wardani",
+      "email": "26552010064@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010065",
+      "name": "Zul Pratama",
+      "email": "26552010065@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010066",
+      "name": "Nurul Iskandar",
+      "email": "26552010066@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010067",
+      "name": "Teuku Hidayat",
+      "email": "26552010067@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010068",
+      "name": "Intan Rahma",
+      "email": "26552010068@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010069",
+      "name": "Syahrul Munandar",
+      "email": "26552010069@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "26552010070",
+      "name": "Rahmat Zulkarnain",
+      "email": "26552010070@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010071",
+      "name": "Faisal Akbar",
+      "email": "25552010071@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010072",
+      "name": "Maulana Suryani",
+      "email": "25552010072@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010073",
+      "name": "Tari Ramadhan",
+      "email": "25552010073@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010074",
+      "name": "Dewi Saputra",
+      "email": "25552010074@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010075",
+      "name": "Ahmad Wulandari",
+      "email": "25552010075@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010076",
+      "name": "Nadia Aulia",
+      "email": "25552010076@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010077",
+      "name": "Bima Maulida",
+      "email": "25552010077@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010078",
+      "name": "Muhammad Fitriani",
+      "email": "25552010078@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010079",
+      "name": "Fajar Wardani",
+      "email": "25552010079@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010080",
+      "name": "Cut Pratama",
+      "email": "25552010080@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010081",
+      "name": "Rizki Iskandar",
+      "email": "25552010081@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010082",
+      "name": "Diki Hidayat",
+      "email": "25552010082@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010083",
+      "name": "Siti Rahma",
+      "email": "25552010083@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010084",
+      "name": "Putri Munandar",
+      "email": "25552010084@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010085",
+      "name": "Zul Zulkarnain",
+      "email": "25552010085@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010086",
+      "name": "Nurul Akbar",
+      "email": "25552010086@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010087",
+      "name": "Teuku Suryani",
+      "email": "25552010087@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010088",
+      "name": "Intan Ramadhan",
+      "email": "25552010088@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010089",
+      "name": "Syahrul Saputra",
+      "email": "25552010089@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010090",
+      "name": "Rahmat Wulandari",
+      "email": "25552010090@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010091",
+      "name": "Faisal Aulia",
+      "email": "25552010091@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010092",
+      "name": "Maulana Maulida",
+      "email": "25552010092@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010093",
+      "name": "Tari Fitriani",
+      "email": "25552010093@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010094",
+      "name": "Dewi Wardani",
+      "email": "25552010094@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010095",
+      "name": "Ahmad Pratama",
+      "email": "25552010095@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010096",
+      "name": "Nadia Iskandar",
+      "email": "25552010096@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010097",
+      "name": "Bima Hidayat",
+      "email": "25552010097@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010098",
+      "name": "Muhammad Rahma",
+      "email": "25552010098@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010099",
+      "name": "Fajar Munandar",
+      "email": "25552010099@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "25552010100",
+      "name": "Cut Zulkarnain",
+      "email": "25552010100@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010101",
+      "name": "Rizki Akbar",
+      "email": "24552010101@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010102",
+      "name": "Diki Suryani",
+      "email": "24552010102@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010103",
+      "name": "Siti Ramadhan",
+      "email": "24552010103@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010104",
+      "name": "Putri Saputra",
+      "email": "24552010104@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010105",
+      "name": "Zul Wulandari",
+      "email": "24552010105@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010106",
+      "name": "Nurul Aulia",
+      "email": "24552010106@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010107",
+      "name": "Teuku Maulida",
+      "email": "24552010107@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010108",
+      "name": "Intan Fitriani",
+      "email": "24552010108@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010109",
+      "name": "Syahrul Wardani",
+      "email": "24552010109@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010110",
+      "name": "Rahmat Pratama",
+      "email": "24552010110@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010111",
+      "name": "Faisal Iskandar",
+      "email": "24552010111@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010112",
+      "name": "Maulana Hidayat",
+      "email": "24552010112@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010113",
+      "name": "Tari Rahma",
+      "email": "24552010113@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010114",
+      "name": "Dewi Munandar",
+      "email": "24552010114@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010115",
+      "name": "Ahmad Zulkarnain",
+      "email": "24552010115@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010116",
+      "name": "Nadia Akbar",
+      "email": "24552010116@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010117",
+      "name": "Bima Suryani",
+      "email": "24552010117@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010118",
+      "name": "Muhammad Ramadhan",
+      "email": "24552010118@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010119",
+      "name": "Fajar Saputra",
+      "email": "24552010119@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010120",
+      "name": "Cut Wulandari",
+      "email": "24552010120@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010121",
+      "name": "Rizki Aulia",
+      "email": "24552010121@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010122",
+      "name": "Diki Maulida",
+      "email": "24552010122@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010123",
+      "name": "Siti Fitriani",
+      "email": "24552010123@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010124",
+      "name": "Putri Wardani",
+      "email": "24552010124@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010125",
+      "name": "Zul Pratama",
+      "email": "24552010125@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010126",
+      "name": "Nurul Iskandar",
+      "email": "24552010126@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010127",
+      "name": "Teuku Hidayat",
+      "email": "24552010127@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010128",
+      "name": "Intan Rahma",
+      "email": "24552010128@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010129",
+      "name": "Syahrul Munandar",
+      "email": "24552010129@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "24552010130",
+      "name": "Rahmat Zulkarnain",
+      "email": "24552010130@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010131",
+      "name": "Faisal Akbar",
+      "email": "23552010131@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010132",
+      "name": "Maulana Suryani",
+      "email": "23552010132@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010133",
+      "name": "Tari Ramadhan",
+      "email": "23552010133@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010134",
+      "name": "Dewi Saputra",
+      "email": "23552010134@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010135",
+      "name": "Ahmad Wulandari",
+      "email": "23552010135@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010136",
+      "name": "Nadia Aulia",
+      "email": "23552010136@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010137",
+      "name": "Bima Maulida",
+      "email": "23552010137@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010138",
+      "name": "Muhammad Fitriani",
+      "email": "23552010138@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010139",
+      "name": "Fajar Wardani",
+      "email": "23552010139@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010140",
+      "name": "Cut Pratama",
+      "email": "23552010140@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010141",
+      "name": "Rizki Iskandar",
+      "email": "23552010141@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010142",
+      "name": "Diki Hidayat",
+      "email": "23552010142@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010143",
+      "name": "Siti Rahma",
+      "email": "23552010143@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010144",
+      "name": "Putri Munandar",
+      "email": "23552010144@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010145",
+      "name": "Zul Zulkarnain",
+      "email": "23552010145@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010146",
+      "name": "Nurul Akbar",
+      "email": "23552010146@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010147",
+      "name": "Teuku Suryani",
+      "email": "23552010147@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010148",
+      "name": "Intan Ramadhan",
+      "email": "23552010148@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010149",
+      "name": "Syahrul Saputra",
+      "email": "23552010149@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010150",
+      "name": "Rahmat Wulandari",
+      "email": "23552010150@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010151",
+      "name": "Faisal Aulia",
+      "email": "23552010151@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010152",
+      "name": "Maulana Maulida",
+      "email": "23552010152@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010153",
+      "name": "Tari Fitriani",
+      "email": "23552010153@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010154",
+      "name": "Dewi Wardani",
+      "email": "23552010154@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    },
+    {
+      "external_id": "23552010155",
+      "name": "Ahmad Pratama",
+      "email": "23552010155@mahasiswa.kampus.ac.id",
+      "role": "mahasiswa",
+      "prodi_code": "INF",
+      "password": "password"
+    }
+  ],
+  "schedules": [
+    {
+      "external_schedule_id": "SCH-2026-IM1A-MED101-1",
+      "course_code": "MED101",
+      "course_name": "Kalkulus (IM-1A)",
+      "lecturer_id": "0020018500",
+      "room_code": "R1",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552020001",
+        "26552020002",
+        "26552020003",
+        "26552020004",
+        "26552020005"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM1A-MED102-2",
+      "course_code": "MED102",
+      "course_name": "Administrasi Data Kesehatan (IM-1A)",
+      "lecturer_id": "0032018502",
+      "room_code": "R5",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552020001",
+        "26552020002",
+        "26552020003",
+        "26552020004",
+        "26552020005"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM1A-MED103-3",
+      "course_code": "MED103",
+      "course_name": "Fisika Dasar (IM-1A)",
+      "lecturer_id": "0019018509",
+      "room_code": "R2",
+      "day_of_week": 2,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552020001",
+        "26552020002",
+        "26552020003",
+        "26552020004",
+        "26552020005"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM1A-MED104-4",
+      "course_code": "MED104",
+      "course_name": "Statistika dan Probabilitas (IM-1A)",
+      "lecturer_id": "0019018509",
+      "room_code": "R2",
+      "day_of_week": 2,
+      "start_time": "14:00:00",
+      "end_time": "16:30:00",
+      "enrolled_students": [
+        "26552020001",
+        "26552020002",
+        "26552020003",
+        "26552020004",
+        "26552020005"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM1A-MED105-5",
+      "course_code": "MED105",
+      "course_name": "Matematika Diskrit (IM-1A)",
+      "lecturer_id": "0036018506",
+      "room_code": "R2",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552020001",
+        "26552020002",
+        "26552020003",
+        "26552020004",
+        "26552020005"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM1A-MED106-6",
+      "course_code": "MED106",
+      "course_name": "Algoritma dan Pemrograman (IM-1A)",
+      "lecturer_id": "0025018505",
+      "room_code": "L2",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552020001",
+        "26552020002",
+        "26552020003",
+        "26552020004",
+        "26552020005"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM1A-MED107-7",
+      "course_code": "MED107",
+      "course_name": "Pengantar Teknologi Kesehatan (IM-1A)",
+      "lecturer_id": "0032018502",
+      "room_code": "R5",
+      "day_of_week": 6,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552020001",
+        "26552020002",
+        "26552020003",
+        "26552020004",
+        "26552020005"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM1B-MED104-8",
+      "course_code": "MED104",
+      "course_name": "Statistika dan Probabilitas (IM-1B)",
+      "lecturer_id": "0019018509",
+      "room_code": "R2",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552020006",
+        "26552020007",
+        "26552020008",
+        "26552020009",
+        "26552020010"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM1B-MED101-9",
+      "course_code": "MED101",
+      "course_name": "Kalkulus (IM-1B)",
+      "lecturer_id": "0020018500",
+      "room_code": "R1",
+      "day_of_week": 1,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552020006",
+        "26552020007",
+        "26552020008",
+        "26552020009",
+        "26552020010"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM1B-MED107-10",
+      "course_code": "MED107",
+      "course_name": "Pengantar Teknologi Kesehatan (IM-1B)",
+      "lecturer_id": "0032018502",
+      "room_code": "R1",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552020006",
+        "26552020007",
+        "26552020008",
+        "26552020009",
+        "26552020010"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM1B-MED105-11",
+      "course_code": "MED105",
+      "course_name": "Matematika Diskrit (IM-1B)",
+      "lecturer_id": "0036018506",
+      "room_code": "R2",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552020006",
+        "26552020007",
+        "26552020008",
+        "26552020009",
+        "26552020010"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM1B-MED103-12",
+      "course_code": "MED103",
+      "course_name": "Fisika Dasar (IM-1B)",
+      "lecturer_id": "0019018509",
+      "room_code": "R5",
+      "day_of_week": 3,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552020006",
+        "26552020007",
+        "26552020008",
+        "26552020009",
+        "26552020010"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM1B-MED106-13",
+      "course_code": "MED106",
+      "course_name": "Algoritma dan Pemrograman (IM-1B)",
+      "lecturer_id": "0025018505",
+      "room_code": "L2",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552020006",
+        "26552020007",
+        "26552020008",
+        "26552020009",
+        "26552020010"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM1B-MED102-14",
+      "course_code": "MED102",
+      "course_name": "Administrasi Data Kesehatan (IM-1B)",
+      "lecturer_id": "0032018502",
+      "room_code": "R5",
+      "day_of_week": 6,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552020006",
+        "26552020007",
+        "26552020008",
+        "26552020009",
+        "26552020010"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM3A-MED108-15",
+      "course_code": "MED108",
+      "course_name": "Pemrograman Basis Data (IM-3A)",
+      "lecturer_id": "0007018507",
+      "room_code": "L2",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552020011",
+        "25552020012",
+        "25552020013",
+        "25552020014",
+        "25552020015"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM3A-MED109-16",
+      "course_code": "MED109",
+      "course_name": "Mekatronika (IM-3A)",
+      "lecturer_id": "0019018509",
+      "room_code": "R1",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552020011",
+        "25552020012",
+        "25552020013",
+        "25552020014",
+        "25552020015"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM3A-MED110-17",
+      "course_code": "MED110",
+      "course_name": "Rekayasa Perangkat Lunak (IM-3A)",
+      "lecturer_id": "0024018504",
+      "room_code": "R6",
+      "day_of_week": 3,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552020011",
+        "25552020012",
+        "25552020013",
+        "25552020014",
+        "25552020015"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM3A-MED111-18",
+      "course_code": "MED111",
+      "course_name": "Komputasi Awan (IM-3A)",
+      "lecturer_id": "0014018504",
+      "room_code": "R5",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552020011",
+        "25552020012",
+        "25552020013",
+        "25552020014",
+        "25552020015"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM3A-MED112-19",
+      "course_code": "MED112",
+      "course_name": "Kecerdasan Buatan dan Sains Data (IM-3A)",
+      "lecturer_id": "0008018508",
+      "room_code": "R1",
+      "day_of_week": 4,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552020011",
+        "25552020012",
+        "25552020013",
+        "25552020014",
+        "25552020015"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM3A-MED113-20",
+      "course_code": "MED113",
+      "course_name": "Bioinformatika (IM-3A)",
+      "lecturer_id": "0023018503",
+      "room_code": "R4",
+      "day_of_week": 5,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552020011",
+        "25552020012",
+        "25552020013",
+        "25552020014",
+        "25552020015"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM3A-MED114-21",
+      "course_code": "MED114",
+      "course_name": "Jaringan Komputer (IM-3A)",
+      "lecturer_id": "0035018505",
+      "room_code": "R1",
+      "day_of_week": 6,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552020011",
+        "25552020012",
+        "25552020013",
+        "25552020014",
+        "25552020015"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM3A-MED115-22",
+      "course_code": "MED115",
+      "course_name": "Kewarganegaraan (IM-3A)",
+      "lecturer_id": "0029018509",
+      "room_code": "R6",
+      "day_of_week": 6,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552020011",
+        "25552020012",
+        "25552020013",
+        "25552020014",
+        "25552020015"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM3B-MED111-23",
+      "course_code": "MED111",
+      "course_name": "Komputasi Awan (IM-3B)",
+      "lecturer_id": "0014018504",
+      "room_code": "R1",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552020016",
+        "25552020017",
+        "25552020018",
+        "25552020019",
+        "25552020020"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM3B-MED109-24",
+      "course_code": "MED109",
+      "course_name": "Mekatronika (IM-3B)",
+      "lecturer_id": "0019018509",
+      "room_code": "R5",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552020016",
+        "25552020017",
+        "25552020018",
+        "25552020019",
+        "25552020020"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM3B-MED108-25",
+      "course_code": "MED108",
+      "course_name": "Pemrograman Basis Data (IM-3B)",
+      "lecturer_id": "0007018507",
+      "room_code": "L2",
+      "day_of_week": 2,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552020016",
+        "25552020017",
+        "25552020018",
+        "25552020019",
+        "25552020020"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM3B-MED110-26",
+      "course_code": "MED110",
+      "course_name": "Rekayasa Perangkat Lunak (IM-3B)",
+      "lecturer_id": "0024018504",
+      "room_code": "R6",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552020016",
+        "25552020017",
+        "25552020018",
+        "25552020019",
+        "25552020020"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM3B-MED112-27",
+      "course_code": "MED112",
+      "course_name": "Kecerdasan Buatan dan Sains Data (IM-3B)",
+      "lecturer_id": "0008018508",
+      "room_code": "R1",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552020016",
+        "25552020017",
+        "25552020018",
+        "25552020019",
+        "25552020020"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM3B-MED113-28",
+      "course_code": "MED113",
+      "course_name": "Bioinformatika (IM-3B)",
+      "lecturer_id": "0023018503",
+      "room_code": "R4",
+      "day_of_week": 5,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552020016",
+        "25552020017",
+        "25552020018",
+        "25552020019",
+        "25552020020"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM3B-MED102-29",
+      "course_code": "MED102",
+      "course_name": "Administrasi Data Kesehatan (IM-3B)",
+      "lecturer_id": "0032018502",
+      "room_code": "R5",
+      "day_of_week": 6,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552020016",
+        "25552020017",
+        "25552020018",
+        "25552020019",
+        "25552020020"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5A-MED116-30",
+      "course_code": "MED116",
+      "course_name": "Pemrograman Web Tingkat Lanjut / Javascript (MSD) (IM-5A)",
+      "lecturer_id": "0026018506",
+      "room_code": "R1",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552020021",
+        "24552020022",
+        "24552020023",
+        "24552020024",
+        "24552020025"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5A-MED117-31",
+      "course_code": "MED117",
+      "course_name": "Metodelogi Penelitian (IM-5A)",
+      "lecturer_id": "0013018503",
+      "room_code": "R3",
+      "day_of_week": 1,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "24552020021",
+        "24552020022",
+        "24552020023",
+        "24552020024",
+        "24552020025"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5A-MED118-32",
+      "course_code": "MED118",
+      "course_name": "Sistem Pendukung Keputusan Kesehatan (IM-5A)",
+      "lecturer_id": "0017018507",
+      "room_code": "R6",
+      "day_of_week": 1,
+      "start_time": "14:00:00",
+      "end_time": "16:30:00",
+      "enrolled_students": [
+        "24552020021",
+        "24552020022",
+        "24552020023",
+        "24552020024",
+        "24552020025"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5A-MED119-33",
+      "course_code": "MED119",
+      "course_name": "Penambangan Data Tingkat Lanjut (MSD) (IM-5A)",
+      "lecturer_id": "0026018506",
+      "room_code": "R6",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552020021",
+        "24552020022",
+        "24552020023",
+        "24552020024",
+        "24552020025"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5A-MED120-34",
+      "course_code": "MED120",
+      "course_name": "Administrasi dan Manajemen Rumah Sakit (IM-5A)",
+      "lecturer_id": "0032018502",
+      "room_code": "R1",
+      "day_of_week": 5,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552020021",
+        "24552020022",
+        "24552020023",
+        "24552020024",
+        "24552020025"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5A-MED121-35",
+      "course_code": "MED121",
+      "course_name": "Akhlak dan Tasawuf (IM-5A)",
+      "lecturer_id": "0028018508",
+      "room_code": "R5",
+      "day_of_week": 5,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "24552020021",
+        "24552020022",
+        "24552020023",
+        "24552020024",
+        "24552020025"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5A-MED122-36",
+      "course_code": "MED122",
+      "course_name": "Bahasa Pemrograman II (Python) (IM-5A)",
+      "lecturer_id": "0031018501",
+      "room_code": "L2",
+      "day_of_week": 6,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552020021",
+        "24552020022",
+        "24552020023",
+        "24552020024",
+        "24552020025"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5B-MED117-37",
+      "course_code": "MED117",
+      "course_name": "Metodelogi Penelitian (IM-5B)",
+      "lecturer_id": "0013018503",
+      "room_code": "R3",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552020026",
+        "24552020027",
+        "24552020028",
+        "24552020029",
+        "24552020030"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5B-MED118-38",
+      "course_code": "MED118",
+      "course_name": "Sistem Pendukung Keputusan Kesehatan (IM-5B)",
+      "lecturer_id": "0017018507",
+      "room_code": "R4",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552020026",
+        "24552020027",
+        "24552020028",
+        "24552020029",
+        "24552020030"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5B-MED116-39",
+      "course_code": "MED116",
+      "course_name": "Pemrograman Web Tingkat Lanjut / Javascript (MSD) (IM-5B)",
+      "lecturer_id": "0026018506",
+      "room_code": "R1",
+      "day_of_week": 2,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "24552020026",
+        "24552020027",
+        "24552020028",
+        "24552020029",
+        "24552020030"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5B-MED119-40",
+      "course_code": "MED119",
+      "course_name": "Penambangan Data Tingkat Lanjut (MSD) (IM-5B)",
+      "lecturer_id": "0026018506",
+      "room_code": "R6",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552020026",
+        "24552020027",
+        "24552020028",
+        "24552020029",
+        "24552020030"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5B-MED120-41",
+      "course_code": "MED120",
+      "course_name": "Administrasi dan Manajemen Rumah Sakit (IM-5B)",
+      "lecturer_id": "0032018502",
+      "room_code": "R1",
+      "day_of_week": 5,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552020026",
+        "24552020027",
+        "24552020028",
+        "24552020029",
+        "24552020030"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5B-MED121-42",
+      "course_code": "MED121",
+      "course_name": "Akhlak dan Tasawuf (IM-5B)",
+      "lecturer_id": "0028018508",
+      "room_code": "R1",
+      "day_of_week": 5,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "24552020026",
+        "24552020027",
+        "24552020028",
+        "24552020029",
+        "24552020030"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5B-MED122-43",
+      "course_code": "MED122",
+      "course_name": "Bahasa Pemrograman II (Python) (IM-5B)",
+      "lecturer_id": "0031018501",
+      "room_code": "L2",
+      "day_of_week": 6,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552020026",
+        "24552020027",
+        "24552020028",
+        "24552020029",
+        "24552020030"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5C-MED117-44",
+      "course_code": "MED117",
+      "course_name": "Metodelogi Penelitian (IM-5C)",
+      "lecturer_id": "0013018503",
+      "room_code": "R3",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552020031",
+        "24552020032",
+        "24552020033",
+        "24552020034",
+        "24552020035"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5C-MED118-45",
+      "course_code": "MED118",
+      "course_name": "Sistem Pendukung Keputusan Kesehatan (IM-5C)",
+      "lecturer_id": "0017018507",
+      "room_code": "R4",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552020031",
+        "24552020032",
+        "24552020033",
+        "24552020034",
+        "24552020035"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5C-MED123-46",
+      "course_code": "MED123",
+      "course_name": "Mikrokontroller dan Mikrokomputer (MID) (IM-5C)",
+      "lecturer_id": "0014018504",
+      "room_code": "R5",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552020031",
+        "24552020032",
+        "24552020033",
+        "24552020034",
+        "24552020035"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5C-MED124-47",
+      "course_code": "MED124",
+      "course_name": "Pengantar Elektronika (MID) (IM-5C)",
+      "lecturer_id": "0019018509",
+      "room_code": "R1",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552020031",
+        "24552020032",
+        "24552020033",
+        "24552020034",
+        "24552020035"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5C-MED120-48",
+      "course_code": "MED120",
+      "course_name": "Administrasi dan Manajemen Rumah Sakit (IM-5C)",
+      "lecturer_id": "0032018502",
+      "room_code": "R2",
+      "day_of_week": 5,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552020031",
+        "24552020032",
+        "24552020033",
+        "24552020034",
+        "24552020035"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5C-MED122-49",
+      "course_code": "MED122",
+      "course_name": "Bahasa Pemrograman II (Python) (IM-5C)",
+      "lecturer_id": "0031018501",
+      "room_code": "L2",
+      "day_of_week": 5,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "24552020031",
+        "24552020032",
+        "24552020033",
+        "24552020034",
+        "24552020035"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM5C-MED121-50",
+      "course_code": "MED121",
+      "course_name": "Akhlak dan Tasawuf (IM-5C)",
+      "lecturer_id": "0028018508",
+      "room_code": "R5",
+      "day_of_week": 5,
+      "start_time": "14:00:00",
+      "end_time": "16:30:00",
+      "enrolled_students": [
+        "24552020031",
+        "24552020032",
+        "24552020033",
+        "24552020034",
+        "24552020035"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM7A-MED125-51",
+      "course_code": "MED125",
+      "course_name": "IoT Data Analysis (MID) (IM-7A)",
+      "lecturer_id": "0014018504",
+      "room_code": "R5",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "23552020036",
+        "23552020037",
+        "23552020038",
+        "23552020039",
+        "23552020040"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IM7A-MED126-52",
+      "course_code": "MED126",
+      "course_name": "Infrastruktur dan Jaringan – Part 2 (MID) (IM-7A)",
+      "lecturer_id": "0014018504",
+      "room_code": "R5",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "23552020036",
+        "23552020037",
+        "23552020038",
+        "23552020039",
+        "23552020040"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1A-INF127-53",
+      "course_code": "INF127",
+      "course_name": "Dasar Pemrograman (IT-1A)",
+      "lecturer_id": "0006018506",
+      "room_code": "L3",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010041",
+        "26552010042",
+        "26552010043",
+        "26552010044",
+        "26552010045"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1A-INF128-54",
+      "course_code": "INF128",
+      "course_name": "Literasi Digital (IT-1A)",
+      "lecturer_id": "0025018505",
+      "room_code": "L3",
+      "day_of_week": 1,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552010041",
+        "26552010042",
+        "26552010043",
+        "26552010044",
+        "26552010045"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1A-INF129-55",
+      "course_code": "INF129",
+      "course_name": "Ilmu Tauhid (IT-1A)",
+      "lecturer_id": "0011018501",
+      "room_code": "R5",
+      "day_of_week": 1,
+      "start_time": "14:00:00",
+      "end_time": "16:30:00",
+      "enrolled_students": [
+        "26552010041",
+        "26552010042",
+        "26552010043",
+        "26552010044",
+        "26552010045"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1A-INF130-56",
+      "course_code": "INF130",
+      "course_name": "Pengantar Multimedia & Kreativitas Digital (IT-1A)",
+      "lecturer_id": "0014018504",
+      "room_code": "R3",
+      "day_of_week": 1,
+      "start_time": "16:45:00",
+      "end_time": "18:45:00",
+      "enrolled_students": [
+        "26552010041",
+        "26552010042",
+        "26552010043",
+        "26552010044",
+        "26552010045"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1A-INF131-57",
+      "course_code": "INF131",
+      "course_name": "Logika Informatika (IT-1A)",
+      "lecturer_id": "0006018506",
+      "room_code": "R1",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010041",
+        "26552010042",
+        "26552010043",
+        "26552010044",
+        "26552010045"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1A-INF132-58",
+      "course_code": "INF132",
+      "course_name": "Pancasila (IT-1A)",
+      "lecturer_id": "0030018500",
+      "room_code": "R4",
+      "day_of_week": 2,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552010041",
+        "26552010042",
+        "26552010043",
+        "26552010044",
+        "26552010045"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1A-MED105-59",
+      "course_code": "MED105",
+      "course_name": "Matematika Diskrit (IT-1A)",
+      "lecturer_id": "0036018506",
+      "room_code": "R3",
+      "day_of_week": 2,
+      "start_time": "14:00:00",
+      "end_time": "16:30:00",
+      "enrolled_students": [
+        "26552010041",
+        "26552010042",
+        "26552010043",
+        "26552010044",
+        "26552010045"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1A-INF133-60",
+      "course_code": "INF133",
+      "course_name": "General English (IT-1A)",
+      "lecturer_id": "0022018502",
+      "room_code": "R5",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010041",
+        "26552010042",
+        "26552010043",
+        "26552010044",
+        "26552010045"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1A-INF134-61",
+      "course_code": "INF134",
+      "course_name": "Pengantar Ilmu Komputer (IT-1A)",
+      "lecturer_id": "0004018504",
+      "room_code": "R3",
+      "day_of_week": 5,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010041",
+        "26552010042",
+        "26552010043",
+        "26552010044",
+        "26552010045"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1B-INF127-62",
+      "course_code": "INF127",
+      "course_name": "Dasar Pemrograman (IT-1B)",
+      "lecturer_id": "0006018506",
+      "room_code": "L3",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010046",
+        "26552010047",
+        "26552010048",
+        "26552010049",
+        "26552010050"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1B-INF128-63",
+      "course_code": "INF128",
+      "course_name": "Literasi Digital (IT-1B)",
+      "lecturer_id": "0025018505",
+      "room_code": "L3",
+      "day_of_week": 1,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552010046",
+        "26552010047",
+        "26552010048",
+        "26552010049",
+        "26552010050"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1B-INF129-64",
+      "course_code": "INF129",
+      "course_name": "Ilmu Tauhid (IT-1B)",
+      "lecturer_id": "0011018501",
+      "room_code": "R5",
+      "day_of_week": 1,
+      "start_time": "14:00:00",
+      "end_time": "16:30:00",
+      "enrolled_students": [
+        "26552010046",
+        "26552010047",
+        "26552010048",
+        "26552010049",
+        "26552010050"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1B-INF130-65",
+      "course_code": "INF130",
+      "course_name": "Pengantar Multimedia & Kreativitas Digital (IT-1B)",
+      "lecturer_id": "0014018504",
+      "room_code": "R3",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010046",
+        "26552010047",
+        "26552010048",
+        "26552010049",
+        "26552010050"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1B-INF131-66",
+      "course_code": "INF131",
+      "course_name": "Logika Informatika (IT-1B)",
+      "lecturer_id": "0006018506",
+      "room_code": "R1",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010046",
+        "26552010047",
+        "26552010048",
+        "26552010049",
+        "26552010050"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1B-INF133-67",
+      "course_code": "INF133",
+      "course_name": "General English (IT-1B)",
+      "lecturer_id": "0022018502",
+      "room_code": "R4",
+      "day_of_week": 3,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552010046",
+        "26552010047",
+        "26552010048",
+        "26552010049",
+        "26552010050"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1B-MED105-68",
+      "course_code": "MED105",
+      "course_name": "Matematika Diskrit (IT-1B)",
+      "lecturer_id": "0036018506",
+      "room_code": "R3",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010046",
+        "26552010047",
+        "26552010048",
+        "26552010049",
+        "26552010050"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1B-INF132-69",
+      "course_code": "INF132",
+      "course_name": "Pancasila (IT-1B)",
+      "lecturer_id": "0030018500",
+      "room_code": "R4",
+      "day_of_week": 4,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552010046",
+        "26552010047",
+        "26552010048",
+        "26552010049",
+        "26552010050"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1B-INF134-70",
+      "course_code": "INF134",
+      "course_name": "Pengantar Ilmu Komputer (IT-1B)",
+      "lecturer_id": "0004018504",
+      "room_code": "R5",
+      "day_of_week": 5,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010046",
+        "26552010047",
+        "26552010048",
+        "26552010049",
+        "26552010050"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1C-INF134-71",
+      "course_code": "INF134",
+      "course_name": "Pengantar Ilmu Komputer (IT-1C)",
+      "lecturer_id": "0004018504",
+      "room_code": "R5",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010051",
+        "26552010052",
+        "26552010053",
+        "26552010054",
+        "26552010055"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1C-INF128-72",
+      "course_code": "INF128",
+      "course_name": "Literasi Digital (IT-1C)",
+      "lecturer_id": "0012018502",
+      "room_code": "R3",
+      "day_of_week": 1,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552010051",
+        "26552010052",
+        "26552010053",
+        "26552010054",
+        "26552010055"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1C-INF129-73",
+      "course_code": "INF129",
+      "course_name": "Ilmu Tauhid (IT-1C)",
+      "lecturer_id": "0011018501",
+      "room_code": "R5",
+      "day_of_week": 1,
+      "start_time": "14:00:00",
+      "end_time": "16:30:00",
+      "enrolled_students": [
+        "26552010051",
+        "26552010052",
+        "26552010053",
+        "26552010054",
+        "26552010055"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1C-INF127-74",
+      "course_code": "INF127",
+      "course_name": "Dasar Pemrograman (IT-1C)",
+      "lecturer_id": "0006018506",
+      "room_code": "L3",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010051",
+        "26552010052",
+        "26552010053",
+        "26552010054",
+        "26552010055"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1C-INF132-75",
+      "course_code": "INF132",
+      "course_name": "Pancasila (IT-1C)",
+      "lecturer_id": "0030018500",
+      "room_code": "R4",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010051",
+        "26552010052",
+        "26552010053",
+        "26552010054",
+        "26552010055"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1C-INF130-76",
+      "course_code": "INF130",
+      "course_name": "Pengantar Multimedia & Kreativitas Digital (IT-1C)",
+      "lecturer_id": "0014018504",
+      "room_code": "R5",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010051",
+        "26552010052",
+        "26552010053",
+        "26552010054",
+        "26552010055"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1C-MED105-77",
+      "course_code": "MED105",
+      "course_name": "Matematika Diskrit (IT-1C)",
+      "lecturer_id": "0036018506",
+      "room_code": "R3",
+      "day_of_week": 4,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552010051",
+        "26552010052",
+        "26552010053",
+        "26552010054",
+        "26552010055"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1C-INF131-78",
+      "course_code": "INF131",
+      "course_name": "Logika Informatika (IT-1C)",
+      "lecturer_id": "0006018506",
+      "room_code": "R2",
+      "day_of_week": 4,
+      "start_time": "14:00:00",
+      "end_time": "16:30:00",
+      "enrolled_students": [
+        "26552010051",
+        "26552010052",
+        "26552010053",
+        "26552010054",
+        "26552010055"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1C-INF133-79",
+      "course_code": "INF133",
+      "course_name": "General English (IT-1C)",
+      "lecturer_id": "0022018502",
+      "room_code": "R5",
+      "day_of_week": 4,
+      "start_time": "16:45:00",
+      "end_time": "18:45:00",
+      "enrolled_students": [
+        "26552010051",
+        "26552010052",
+        "26552010053",
+        "26552010054",
+        "26552010055"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1D-INF134-80",
+      "course_code": "INF134",
+      "course_name": "Pengantar Ilmu Komputer (IT-1D)",
+      "lecturer_id": "0004018504",
+      "room_code": "R5",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010056",
+        "26552010057",
+        "26552010058",
+        "26552010059",
+        "26552010060"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1D-INF128-81",
+      "course_code": "INF128",
+      "course_name": "Literasi Digital (IT-1D)",
+      "lecturer_id": "0012018502",
+      "room_code": "LR",
+      "day_of_week": 1,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552010056",
+        "26552010057",
+        "26552010058",
+        "26552010059",
+        "26552010060"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1D-INF127-82",
+      "course_code": "INF127",
+      "course_name": "Dasar Pemrograman (IT-1D)",
+      "lecturer_id": "0006018506",
+      "room_code": "L3",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010056",
+        "26552010057",
+        "26552010058",
+        "26552010059",
+        "26552010060"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1D-MED105-83",
+      "course_code": "MED105",
+      "course_name": "Matematika Diskrit (IT-1D)",
+      "lecturer_id": "0020018500",
+      "room_code": "R1",
+      "day_of_week": 2,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552010056",
+        "26552010057",
+        "26552010058",
+        "26552010059",
+        "26552010060"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1D-INF132-84",
+      "course_code": "INF132",
+      "course_name": "Pancasila (IT-1D)",
+      "lecturer_id": "0030018500",
+      "room_code": "R4",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010056",
+        "26552010057",
+        "26552010058",
+        "26552010059",
+        "26552010060"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1D-INF133-85",
+      "course_code": "INF133",
+      "course_name": "General English (IT-1D)",
+      "lecturer_id": "0022018502",
+      "room_code": "R4",
+      "day_of_week": 3,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552010056",
+        "26552010057",
+        "26552010058",
+        "26552010059",
+        "26552010060"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1D-INF131-86",
+      "course_code": "INF131",
+      "course_name": "Logika Informatika (IT-1D)",
+      "lecturer_id": "0006018506",
+      "room_code": "R2",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010056",
+        "26552010057",
+        "26552010058",
+        "26552010059",
+        "26552010060"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1D-INF130-87",
+      "course_code": "INF130",
+      "course_name": "Pengantar Multimedia & Kreativitas Digital (IT-1D)",
+      "lecturer_id": "0016018506",
+      "room_code": "R2",
+      "day_of_week": 5,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010056",
+        "26552010057",
+        "26552010058",
+        "26552010059",
+        "26552010060"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1D-INF129-88",
+      "course_code": "INF129",
+      "course_name": "Ilmu Tauhid (IT-1D)",
+      "lecturer_id": "0028018508",
+      "room_code": "R5",
+      "day_of_week": 6,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010056",
+        "26552010057",
+        "26552010058",
+        "26552010059",
+        "26552010060"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1E-INF128-89",
+      "course_code": "INF128",
+      "course_name": "Literasi Digital (IT-1E)",
+      "lecturer_id": "0012018502",
+      "room_code": "LR",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010061",
+        "26552010062",
+        "26552010063",
+        "26552010064",
+        "26552010065"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1E-MED105-90",
+      "course_code": "MED105",
+      "course_name": "Matematika Diskrit (IT-1E)",
+      "lecturer_id": "0020018500",
+      "room_code": "R1",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010061",
+        "26552010062",
+        "26552010063",
+        "26552010064",
+        "26552010065"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1E-INF134-91",
+      "course_code": "INF134",
+      "course_name": "Pengantar Ilmu Komputer (IT-1E)",
+      "lecturer_id": "0004018504",
+      "room_code": "R5",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010061",
+        "26552010062",
+        "26552010063",
+        "26552010064",
+        "26552010065"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1E-INF131-92",
+      "course_code": "INF131",
+      "course_name": "Logika Informatika (IT-1E)",
+      "lecturer_id": "0006018506",
+      "room_code": "R1",
+      "day_of_week": 3,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552010061",
+        "26552010062",
+        "26552010063",
+        "26552010064",
+        "26552010065"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1E-INF132-93",
+      "course_code": "INF132",
+      "course_name": "Pancasila (IT-1E)",
+      "lecturer_id": "0030018500",
+      "room_code": "R4",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010061",
+        "26552010062",
+        "26552010063",
+        "26552010064",
+        "26552010065"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1E-INF133-94",
+      "course_code": "INF133",
+      "course_name": "General English (IT-1E)",
+      "lecturer_id": "0022018502",
+      "room_code": "R5",
+      "day_of_week": 4,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552010061",
+        "26552010062",
+        "26552010063",
+        "26552010064",
+        "26552010065"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1E-INF130-95",
+      "course_code": "INF130",
+      "course_name": "Pengantar Multimedia & Kreativitas Digital (IT-1E)",
+      "lecturer_id": "0016018506",
+      "room_code": "LR",
+      "day_of_week": 6,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010061",
+        "26552010062",
+        "26552010063",
+        "26552010064",
+        "26552010065"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1E-INF129-96",
+      "course_code": "INF129",
+      "course_name": "Ilmu Tauhid (IT-1E)",
+      "lecturer_id": "0028018508",
+      "room_code": "R5",
+      "day_of_week": 6,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552010061",
+        "26552010062",
+        "26552010063",
+        "26552010064",
+        "26552010065"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1E-INF127-97",
+      "course_code": "INF127",
+      "course_name": "Dasar Pemrograman (IT-1E)",
+      "lecturer_id": "0031018501",
+      "room_code": "L2",
+      "day_of_week": 6,
+      "start_time": "14:00:00",
+      "end_time": "16:30:00",
+      "enrolled_students": [
+        "26552010061",
+        "26552010062",
+        "26552010063",
+        "26552010064",
+        "26552010065"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1F-MED105-98",
+      "course_code": "MED105",
+      "course_name": "Matematika Diskrit (IT-1F)",
+      "lecturer_id": "0020018500",
+      "room_code": "R3",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010066",
+        "26552010067",
+        "26552010068",
+        "26552010069",
+        "26552010070"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1F-INF128-99",
+      "course_code": "INF128",
+      "course_name": "Literasi Digital (IT-1F)",
+      "lecturer_id": "0012018502",
+      "room_code": "LR",
+      "day_of_week": 1,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552010066",
+        "26552010067",
+        "26552010068",
+        "26552010069",
+        "26552010070"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1F-INF134-100",
+      "course_code": "INF134",
+      "course_name": "Pengantar Ilmu Komputer (IT-1F)",
+      "lecturer_id": "0004018504",
+      "room_code": "R5",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010066",
+        "26552010067",
+        "26552010068",
+        "26552010069",
+        "26552010070"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1F-INF133-101",
+      "course_code": "INF133",
+      "course_name": "General English (IT-1F)",
+      "lecturer_id": "0022018502",
+      "room_code": "R4",
+      "day_of_week": 3,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552010066",
+        "26552010067",
+        "26552010068",
+        "26552010069",
+        "26552010070"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1F-INF132-102",
+      "course_code": "INF132",
+      "course_name": "Pancasila (IT-1F)",
+      "lecturer_id": "0030018500",
+      "room_code": "R4",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010066",
+        "26552010067",
+        "26552010068",
+        "26552010069",
+        "26552010070"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1F-INF131-103",
+      "course_code": "INF131",
+      "course_name": "Logika Informatika (IT-1F)",
+      "lecturer_id": "0006018506",
+      "room_code": "R2",
+      "day_of_week": 4,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552010066",
+        "26552010067",
+        "26552010068",
+        "26552010069",
+        "26552010070"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1F-INF130-104",
+      "course_code": "INF130",
+      "course_name": "Pengantar Multimedia & Kreativitas Digital (IT-1F)",
+      "lecturer_id": "0016018506",
+      "room_code": "R2",
+      "day_of_week": 5,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010066",
+        "26552010067",
+        "26552010068",
+        "26552010069",
+        "26552010070"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1F-INF129-105",
+      "course_code": "INF129",
+      "course_name": "Ilmu Tauhid (IT-1F)",
+      "lecturer_id": "0028018508",
+      "room_code": "R5",
+      "day_of_week": 6,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "26552010066",
+        "26552010067",
+        "26552010068",
+        "26552010069",
+        "26552010070"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT1F-INF127-106",
+      "course_code": "INF127",
+      "course_name": "Dasar Pemrograman (IT-1F)",
+      "lecturer_id": "0031018501",
+      "room_code": "L2",
+      "day_of_week": 6,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "26552010066",
+        "26552010067",
+        "26552010068",
+        "26552010069",
+        "26552010070"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3A-INF135-107",
+      "course_code": "INF135",
+      "course_name": "Pemrograman Berorientasi Objek (IT-3A)",
+      "lecturer_id": "0007018507",
+      "room_code": "L2",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010071",
+        "25552010072",
+        "25552010073",
+        "25552010074",
+        "25552010075"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3A-INF136-108",
+      "course_code": "INF136",
+      "course_name": "Sistem Basis Data (IT-3A)",
+      "lecturer_id": "0017018507",
+      "room_code": "R6",
+      "day_of_week": 1,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010071",
+        "25552010072",
+        "25552010073",
+        "25552010074",
+        "25552010075"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3A-INF137-109",
+      "course_code": "INF137",
+      "course_name": "Struktur Data (IT-3A)",
+      "lecturer_id": "0012018502",
+      "room_code": "R6",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010071",
+        "25552010072",
+        "25552010073",
+        "25552010074",
+        "25552010075"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3A-INF138-110",
+      "course_code": "INF138",
+      "course_name": "Jaringan Komputer I (IT-3A)",
+      "lecturer_id": "0015018505",
+      "room_code": "LR",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010071",
+        "25552010072",
+        "25552010073",
+        "25552010074",
+        "25552010075"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3A-INF139-111",
+      "course_code": "INF139",
+      "course_name": "Kriptografi (IT-3A)",
+      "lecturer_id": "0013018503",
+      "room_code": "R2",
+      "day_of_week": 3,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010071",
+        "25552010072",
+        "25552010073",
+        "25552010074",
+        "25552010075"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3A-INF140-112",
+      "course_code": "INF140",
+      "course_name": "Multimedia (IT-3A)",
+      "lecturer_id": "0037018507",
+      "room_code": "L3",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010071",
+        "25552010072",
+        "25552010073",
+        "25552010074",
+        "25552010075"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3A-INF141-113",
+      "course_code": "INF141",
+      "course_name": "Pendidikan Agama Islam III (IT-3A)",
+      "lecturer_id": "0009018509",
+      "room_code": "RKU-1",
+      "day_of_week": 4,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010071",
+        "25552010072",
+        "25552010073",
+        "25552010074",
+        "25552010075"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3A-INF142-114",
+      "course_code": "INF142",
+      "course_name": "Entrepreneurship (IT-3A)",
+      "lecturer_id": "0038018508",
+      "room_code": "R1",
+      "day_of_week": 5,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010071",
+        "25552010072",
+        "25552010073",
+        "25552010074",
+        "25552010075"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3A-INF143-115",
+      "course_code": "INF143",
+      "course_name": "Mikrokontroler (IT-3A)",
+      "lecturer_id": "0005018505",
+      "room_code": "R3",
+      "day_of_week": 5,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010071",
+        "25552010072",
+        "25552010073",
+        "25552010074",
+        "25552010075"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3B-INF135-116",
+      "course_code": "INF135",
+      "course_name": "Pemrograman Berorientasi Objek (IT-3B)",
+      "lecturer_id": "0007018507",
+      "room_code": "L2",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010076",
+        "25552010077",
+        "25552010078",
+        "25552010079",
+        "25552010080"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3B-INF136-117",
+      "course_code": "INF136",
+      "course_name": "Sistem Basis Data (IT-3B)",
+      "lecturer_id": "0017018507",
+      "room_code": "R6",
+      "day_of_week": 1,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010076",
+        "25552010077",
+        "25552010078",
+        "25552010079",
+        "25552010080"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3B-INF137-118",
+      "course_code": "INF137",
+      "course_name": "Struktur Data (IT-3B)",
+      "lecturer_id": "0012018502",
+      "room_code": "R6",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010076",
+        "25552010077",
+        "25552010078",
+        "25552010079",
+        "25552010080"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3B-INF139-119",
+      "course_code": "INF139",
+      "course_name": "Kriptografi (IT-3B)",
+      "lecturer_id": "0013018503",
+      "room_code": "R3",
+      "day_of_week": 2,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010076",
+        "25552010077",
+        "25552010078",
+        "25552010079",
+        "25552010080"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3B-INF138-120",
+      "course_code": "INF138",
+      "course_name": "Jaringan Komputer I (IT-3B)",
+      "lecturer_id": "0015018505",
+      "room_code": "R3",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010076",
+        "25552010077",
+        "25552010078",
+        "25552010079",
+        "25552010080"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3B-INF140-121",
+      "course_code": "INF140",
+      "course_name": "Multimedia (IT-3B)",
+      "lecturer_id": "0037018507",
+      "room_code": "L3",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010076",
+        "25552010077",
+        "25552010078",
+        "25552010079",
+        "25552010080"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3B-INF141-122",
+      "course_code": "INF141",
+      "course_name": "Pendidikan Agama Islam III (IT-3B)",
+      "lecturer_id": "0009018509",
+      "room_code": "RKU-1",
+      "day_of_week": 4,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010076",
+        "25552010077",
+        "25552010078",
+        "25552010079",
+        "25552010080"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3B-INF142-123",
+      "course_code": "INF142",
+      "course_name": "Entrepreneurship (IT-3B)",
+      "lecturer_id": "0038018508",
+      "room_code": "R1",
+      "day_of_week": 5,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010076",
+        "25552010077",
+        "25552010078",
+        "25552010079",
+        "25552010080"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3B-INF143-124",
+      "course_code": "INF143",
+      "course_name": "Mikrokontroler (IT-3B)",
+      "lecturer_id": "0005018505",
+      "room_code": "R3",
+      "day_of_week": 6,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010076",
+        "25552010077",
+        "25552010078",
+        "25552010079",
+        "25552010080"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3C-INF135-125",
+      "course_code": "INF135",
+      "course_name": "Pemrograman Berorientasi Objek (IT-3C)",
+      "lecturer_id": "0007018507",
+      "room_code": "L2",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010081",
+        "25552010082",
+        "25552010083",
+        "25552010084",
+        "25552010085"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3C-INF136-126",
+      "course_code": "INF136",
+      "course_name": "Sistem Basis Data (IT-3C)",
+      "lecturer_id": "0017018507",
+      "room_code": "R4",
+      "day_of_week": 2,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010081",
+        "25552010082",
+        "25552010083",
+        "25552010084",
+        "25552010085"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3C-INF139-127",
+      "course_code": "INF139",
+      "course_name": "Kriptografi (IT-3C)",
+      "lecturer_id": "0013018503",
+      "room_code": "R3",
+      "day_of_week": 2,
+      "start_time": "14:00:00",
+      "end_time": "16:30:00",
+      "enrolled_students": [
+        "25552010081",
+        "25552010082",
+        "25552010083",
+        "25552010084",
+        "25552010085"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3C-INF137-128",
+      "course_code": "INF137",
+      "course_name": "Struktur Data (IT-3C)",
+      "lecturer_id": "0012018502",
+      "room_code": "R3",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010081",
+        "25552010082",
+        "25552010083",
+        "25552010084",
+        "25552010085"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3C-INF138-129",
+      "course_code": "INF138",
+      "course_name": "Jaringan Komputer I (IT-3C)",
+      "lecturer_id": "0015018505",
+      "room_code": "R3",
+      "day_of_week": 3,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010081",
+        "25552010082",
+        "25552010083",
+        "25552010084",
+        "25552010085"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3C-INF142-130",
+      "course_code": "INF142",
+      "course_name": "Entrepreneurship (IT-3C)",
+      "lecturer_id": "0038018508",
+      "room_code": "R1",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010081",
+        "25552010082",
+        "25552010083",
+        "25552010084",
+        "25552010085"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3C-INF141-131",
+      "course_code": "INF141",
+      "course_name": "Pendidikan Agama Islam III (IT-3C)",
+      "lecturer_id": "0009018509",
+      "room_code": "RKU-1",
+      "day_of_week": 4,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010081",
+        "25552010082",
+        "25552010083",
+        "25552010084",
+        "25552010085"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3C-INF140-132",
+      "course_code": "INF140",
+      "course_name": "Multimedia (IT-3C)",
+      "lecturer_id": "0037018507",
+      "room_code": "L3",
+      "day_of_week": 5,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010081",
+        "25552010082",
+        "25552010083",
+        "25552010084",
+        "25552010085"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3C-INF143-133",
+      "course_code": "INF143",
+      "course_name": "Mikrokontroler (IT-3C)",
+      "lecturer_id": "0005018505",
+      "room_code": "R3",
+      "day_of_week": 6,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010081",
+        "25552010082",
+        "25552010083",
+        "25552010084",
+        "25552010085"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3D-INF142-134",
+      "course_code": "INF142",
+      "course_name": "Entrepreneurship (IT-3D)",
+      "lecturer_id": "0036018506",
+      "room_code": "R2",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010086",
+        "25552010087",
+        "25552010088",
+        "25552010089",
+        "25552010090"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3D-INF136-135",
+      "course_code": "INF136",
+      "course_name": "Sistem Basis Data (IT-3D)",
+      "lecturer_id": "0018018508",
+      "room_code": "R3",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010086",
+        "25552010087",
+        "25552010088",
+        "25552010089",
+        "25552010090"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3D-INF135-136",
+      "course_code": "INF135",
+      "course_name": "Pemrograman Berorientasi Objek (IT-3D)",
+      "lecturer_id": "0007018507",
+      "room_code": "L2",
+      "day_of_week": 2,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010086",
+        "25552010087",
+        "25552010088",
+        "25552010089",
+        "25552010090"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3D-INF137-137",
+      "course_code": "INF137",
+      "course_name": "Struktur Data (IT-3D)",
+      "lecturer_id": "0012018502",
+      "room_code": "R6",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010086",
+        "25552010087",
+        "25552010088",
+        "25552010089",
+        "25552010090"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3D-INF138-138",
+      "course_code": "INF138",
+      "course_name": "Jaringan Komputer I (IT-3D)",
+      "lecturer_id": "0015018505",
+      "room_code": "LR",
+      "day_of_week": 3,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010086",
+        "25552010087",
+        "25552010088",
+        "25552010089",
+        "25552010090"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3D-INF139-139",
+      "course_code": "INF139",
+      "course_name": "Kriptografi (IT-3D)",
+      "lecturer_id": "0013018503",
+      "room_code": "R2",
+      "day_of_week": 3,
+      "start_time": "14:00:00",
+      "end_time": "16:30:00",
+      "enrolled_students": [
+        "25552010086",
+        "25552010087",
+        "25552010088",
+        "25552010089",
+        "25552010090"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3D-INF141-140",
+      "course_code": "INF141",
+      "course_name": "Pendidikan Agama Islam III (IT-3D)",
+      "lecturer_id": "0010018500",
+      "room_code": "RKU-1",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010086",
+        "25552010087",
+        "25552010088",
+        "25552010089",
+        "25552010090"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3D-INF140-141",
+      "course_code": "INF140",
+      "course_name": "Multimedia (IT-3D)",
+      "lecturer_id": "0016018506",
+      "room_code": "LR",
+      "day_of_week": 6,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010086",
+        "25552010087",
+        "25552010088",
+        "25552010089",
+        "25552010090"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3D-INF143-142",
+      "course_code": "INF143",
+      "course_name": "Mikrokontroler (IT-3D)",
+      "lecturer_id": "0005018505",
+      "room_code": "R3",
+      "day_of_week": 6,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010086",
+        "25552010087",
+        "25552010088",
+        "25552010089",
+        "25552010090"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3E-INF142-143",
+      "course_code": "INF142",
+      "course_name": "Entrepreneurship (IT-3E)",
+      "lecturer_id": "0036018506",
+      "room_code": "R2",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010091",
+        "25552010092",
+        "25552010093",
+        "25552010094",
+        "25552010095"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3E-INF136-144",
+      "course_code": "INF136",
+      "course_name": "Sistem Basis Data (IT-3E)",
+      "lecturer_id": "0018018508",
+      "room_code": "R3",
+      "day_of_week": 1,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010091",
+        "25552010092",
+        "25552010093",
+        "25552010094",
+        "25552010095"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3E-INF135-145",
+      "course_code": "INF135",
+      "course_name": "Pemrograman Berorientasi Objek (IT-3E)",
+      "lecturer_id": "0007018507",
+      "room_code": "L2",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010091",
+        "25552010092",
+        "25552010093",
+        "25552010094",
+        "25552010095"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3E-INF137-146",
+      "course_code": "INF137",
+      "course_name": "Struktur Data (IT-3E)",
+      "lecturer_id": "0012018502",
+      "room_code": "R6",
+      "day_of_week": 3,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010091",
+        "25552010092",
+        "25552010093",
+        "25552010094",
+        "25552010095"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3E-INF139-147",
+      "course_code": "INF139",
+      "course_name": "Kriptografi (IT-3E)",
+      "lecturer_id": "0013018503",
+      "room_code": "R2",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010091",
+        "25552010092",
+        "25552010093",
+        "25552010094",
+        "25552010095"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3E-INF138-148",
+      "course_code": "INF138",
+      "course_name": "Jaringan Komputer I (IT-3E)",
+      "lecturer_id": "0002018502",
+      "room_code": "LR",
+      "day_of_week": 4,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010091",
+        "25552010092",
+        "25552010093",
+        "25552010094",
+        "25552010095"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3E-INF141-149",
+      "course_code": "INF141",
+      "course_name": "Pendidikan Agama Islam III (IT-3E)",
+      "lecturer_id": "0010018500",
+      "room_code": "RKU-1",
+      "day_of_week": 4,
+      "start_time": "14:00:00",
+      "end_time": "16:30:00",
+      "enrolled_students": [
+        "25552010091",
+        "25552010092",
+        "25552010093",
+        "25552010094",
+        "25552010095"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3E-INF143-150",
+      "course_code": "INF143",
+      "course_name": "Mikrokontroler (IT-3E)",
+      "lecturer_id": "0005018505",
+      "room_code": "R3",
+      "day_of_week": 5,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010091",
+        "25552010092",
+        "25552010093",
+        "25552010094",
+        "25552010095"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3E-INF140-151",
+      "course_code": "INF140",
+      "course_name": "Multimedia (IT-3E)",
+      "lecturer_id": "0016018506",
+      "room_code": "LR",
+      "day_of_week": 6,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010091",
+        "25552010092",
+        "25552010093",
+        "25552010094",
+        "25552010095"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3F-INF142-152",
+      "course_code": "INF142",
+      "course_name": "Entrepreneurship (IT-3F)",
+      "lecturer_id": "0036018506",
+      "room_code": "R2",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010096",
+        "25552010097",
+        "25552010098",
+        "25552010099",
+        "25552010100"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3F-INF137-153",
+      "course_code": "INF137",
+      "course_name": "Struktur Data (IT-3F)",
+      "lecturer_id": "0012018502",
+      "room_code": "R6",
+      "day_of_week": 2,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010096",
+        "25552010097",
+        "25552010098",
+        "25552010099",
+        "25552010100"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3F-INF136-154",
+      "course_code": "INF136",
+      "course_name": "Sistem Basis Data (IT-3F)",
+      "lecturer_id": "0018018508",
+      "room_code": "R3",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010096",
+        "25552010097",
+        "25552010098",
+        "25552010099",
+        "25552010100"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3F-INF135-155",
+      "course_code": "INF135",
+      "course_name": "Pemrograman Berorientasi Objek (IT-3F)",
+      "lecturer_id": "0007018507",
+      "room_code": "L2",
+      "day_of_week": 3,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010096",
+        "25552010097",
+        "25552010098",
+        "25552010099",
+        "25552010100"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3F-INF138-156",
+      "course_code": "INF138",
+      "course_name": "Jaringan Komputer I (IT-3F)",
+      "lecturer_id": "0002018502",
+      "room_code": "LR",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010096",
+        "25552010097",
+        "25552010098",
+        "25552010099",
+        "25552010100"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3F-INF139-157",
+      "course_code": "INF139",
+      "course_name": "Kriptografi (IT-3F)",
+      "lecturer_id": "0013018503",
+      "room_code": "R2",
+      "day_of_week": 4,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010096",
+        "25552010097",
+        "25552010098",
+        "25552010099",
+        "25552010100"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3F-INF141-158",
+      "course_code": "INF141",
+      "course_name": "Pendidikan Agama Islam III (IT-3F)",
+      "lecturer_id": "0010018500",
+      "room_code": "RKU-1",
+      "day_of_week": 4,
+      "start_time": "14:00:00",
+      "end_time": "16:30:00",
+      "enrolled_students": [
+        "25552010096",
+        "25552010097",
+        "25552010098",
+        "25552010099",
+        "25552010100"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3F-INF140-159",
+      "course_code": "INF140",
+      "course_name": "Multimedia (IT-3F)",
+      "lecturer_id": "0037018507",
+      "room_code": "L3",
+      "day_of_week": 5,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "25552010096",
+        "25552010097",
+        "25552010098",
+        "25552010099",
+        "25552010100"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT3F-INF144-160",
+      "course_code": "INF144",
+      "course_name": "Mikrokontroler (2 sesi) (IT-3F)",
+      "lecturer_id": "0005018505",
+      "room_code": "R3",
+      "day_of_week": 5,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "25552010096",
+        "25552010097",
+        "25552010098",
+        "25552010099",
+        "25552010100"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5A-INF145-161",
+      "course_code": "INF145",
+      "course_name": "Data Mining (IT-5A)",
+      "lecturer_id": "0008018508",
+      "room_code": "R1",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010101",
+        "24552010102",
+        "24552010103",
+        "24552010104",
+        "24552010105"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5A-INF146-162",
+      "course_code": "INF146",
+      "course_name": "Sistem Pendukung Keputusan (IT-5A)",
+      "lecturer_id": "0017018507",
+      "room_code": "R6",
+      "day_of_week": 1,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "24552010101",
+        "24552010102",
+        "24552010103",
+        "24552010104",
+        "24552010105"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5A-INF147-163",
+      "course_code": "INF147",
+      "course_name": "Pemrograman Multi User (IT-5A)",
+      "lecturer_id": "0026018506",
+      "room_code": "R3",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010101",
+        "24552010102",
+        "24552010103",
+        "24552010104",
+        "24552010105"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5A-INF148-164",
+      "course_code": "INF148",
+      "course_name": "Pemrograman Open Source (IT-5A)",
+      "lecturer_id": "0025018505",
+      "room_code": "L2",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010101",
+        "24552010102",
+        "24552010103",
+        "24552010104",
+        "24552010105"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5A-INF149-165",
+      "course_code": "INF149",
+      "course_name": "E-Commerce (IT-5A)",
+      "lecturer_id": "0033018503",
+      "room_code": "L3",
+      "day_of_week": 3,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "24552010101",
+        "24552010102",
+        "24552010103",
+        "24552010104",
+        "24552010105"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5A-MED110-166",
+      "course_code": "MED110",
+      "course_name": "Rekayasa Perangkat Lunak (IT-5A)",
+      "lecturer_id": "0023018503",
+      "room_code": "R4",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010101",
+        "24552010102",
+        "24552010103",
+        "24552010104",
+        "24552010105"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5A-INF150-167",
+      "course_code": "INF150",
+      "course_name": "Pengolahan Citra (IT-5A)",
+      "lecturer_id": "0021018501",
+      "room_code": "R6",
+      "day_of_week": 5,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010101",
+        "24552010102",
+        "24552010103",
+        "24552010104",
+        "24552010105"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5A-INF151-168",
+      "course_code": "INF151",
+      "course_name": "Perencanaan Bisnis (IT-5A)",
+      "lecturer_id": "0001018501",
+      "room_code": "R3",
+      "day_of_week": 6,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010101",
+        "24552010102",
+        "24552010103",
+        "24552010104",
+        "24552010105"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5B-INF146-169",
+      "course_code": "INF146",
+      "course_name": "Sistem Pendukung Keputusan (IT-5B)",
+      "lecturer_id": "0017018507",
+      "room_code": "R6",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010106",
+        "24552010107",
+        "24552010108",
+        "24552010109",
+        "24552010110"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5B-INF145-170",
+      "course_code": "INF145",
+      "course_name": "Data Mining (IT-5B)",
+      "lecturer_id": "0008018508",
+      "room_code": "R1",
+      "day_of_week": 1,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "24552010106",
+        "24552010107",
+        "24552010108",
+        "24552010109",
+        "24552010110"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5B-INF148-171",
+      "course_code": "INF148",
+      "course_name": "Pemrograman Open Source (IT-5B)",
+      "lecturer_id": "0025018505",
+      "room_code": "L2",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010106",
+        "24552010107",
+        "24552010108",
+        "24552010109",
+        "24552010110"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5B-MED110-172",
+      "course_code": "MED110",
+      "course_name": "Rekayasa Perangkat Lunak (IT-5B)",
+      "lecturer_id": "0023018503",
+      "room_code": "R4",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010106",
+        "24552010107",
+        "24552010108",
+        "24552010109",
+        "24552010110"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5B-INF147-173",
+      "course_code": "INF147",
+      "course_name": "Pemrograman Multi User (IT-5B)",
+      "lecturer_id": "0003018503",
+      "room_code": "LR",
+      "day_of_week": 5,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010106",
+        "24552010107",
+        "24552010108",
+        "24552010109",
+        "24552010110"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5B-INF150-174",
+      "course_code": "INF150",
+      "course_name": "Pengolahan Citra (IT-5B)",
+      "lecturer_id": "0021018501",
+      "room_code": "R3",
+      "day_of_week": 6,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010106",
+        "24552010107",
+        "24552010108",
+        "24552010109",
+        "24552010110"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5B-INF151-175",
+      "course_code": "INF151",
+      "course_name": "Perencanaan Bisnis (IT-5B)",
+      "lecturer_id": "0001018501",
+      "room_code": "R3",
+      "day_of_week": 6,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "24552010106",
+        "24552010107",
+        "24552010108",
+        "24552010109",
+        "24552010110"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5B-INF149-176",
+      "course_code": "INF149",
+      "course_name": "E-Commerce (IT-5B)",
+      "lecturer_id": "0033018503",
+      "room_code": "R3",
+      "day_of_week": 6,
+      "start_time": "14:00:00",
+      "end_time": "16:30:00",
+      "enrolled_students": [
+        "24552010106",
+        "24552010107",
+        "24552010108",
+        "24552010109",
+        "24552010110"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5C-INF145-177",
+      "course_code": "INF145",
+      "course_name": "Data Mining (IT-5C)",
+      "lecturer_id": "0008018508",
+      "room_code": "R1",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010111",
+        "24552010112",
+        "24552010113",
+        "24552010114",
+        "24552010115"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5C-INF146-178",
+      "course_code": "INF146",
+      "course_name": "Sistem Pendukung Keputusan (IT-5C)",
+      "lecturer_id": "0017018507",
+      "room_code": "R6",
+      "day_of_week": 2,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "24552010111",
+        "24552010112",
+        "24552010113",
+        "24552010114",
+        "24552010115"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5C-INF148-179",
+      "course_code": "INF148",
+      "course_name": "Pemrograman Open Source (IT-5C)",
+      "lecturer_id": "0025018505",
+      "room_code": "L2",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010111",
+        "24552010112",
+        "24552010113",
+        "24552010114",
+        "24552010115"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5C-INF150-180",
+      "course_code": "INF150",
+      "course_name": "Pengolahan Citra (IT-5C)",
+      "lecturer_id": "0038018508",
+      "room_code": "R6",
+      "day_of_week": 4,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "24552010111",
+        "24552010112",
+        "24552010113",
+        "24552010114",
+        "24552010115"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5C-MED110-181",
+      "course_code": "MED110",
+      "course_name": "Rekayasa Perangkat Lunak (IT-5C)",
+      "lecturer_id": "0023018503",
+      "room_code": "R4",
+      "day_of_week": 5,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010111",
+        "24552010112",
+        "24552010113",
+        "24552010114",
+        "24552010115"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5C-INF151-182",
+      "course_code": "INF151",
+      "course_name": "Perencanaan Bisnis (IT-5C)",
+      "lecturer_id": "0001018501",
+      "room_code": "R4",
+      "day_of_week": 5,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "24552010111",
+        "24552010112",
+        "24552010113",
+        "24552010114",
+        "24552010115"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5C-INF147-183",
+      "course_code": "INF147",
+      "course_name": "Pemrograman Multi User (IT-5C)",
+      "lecturer_id": "0003018503",
+      "room_code": "LR",
+      "day_of_week": 5,
+      "start_time": "14:00:00",
+      "end_time": "16:30:00",
+      "enrolled_students": [
+        "24552010111",
+        "24552010112",
+        "24552010113",
+        "24552010114",
+        "24552010115"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5C-INF149-184",
+      "course_code": "INF149",
+      "course_name": "E-Commerce (IT-5C)",
+      "lecturer_id": "0033018503",
+      "room_code": "R1",
+      "day_of_week": 5,
+      "start_time": "16:45:00",
+      "end_time": "18:45:00",
+      "enrolled_students": [
+        "24552010111",
+        "24552010112",
+        "24552010113",
+        "24552010114",
+        "24552010115"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5D-INF145-185",
+      "course_code": "INF145",
+      "course_name": "Data Mining (IT-5D)",
+      "lecturer_id": "0008018508",
+      "room_code": "R1",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010116",
+        "24552010117",
+        "24552010118",
+        "24552010119",
+        "24552010120"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5D-INF152-186",
+      "course_code": "INF152",
+      "course_name": "Perancangan Film (IT-5D)",
+      "lecturer_id": "0037018507",
+      "room_code": "L3",
+      "day_of_week": 2,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "24552010116",
+        "24552010117",
+        "24552010118",
+        "24552010119",
+        "24552010120"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5D-INF153-187",
+      "course_code": "INF153",
+      "course_name": "Desain Media Interaktif (IT-5D)",
+      "lecturer_id": "0037018507",
+      "room_code": "L3",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010116",
+        "24552010117",
+        "24552010118",
+        "24552010119",
+        "24552010120"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5D-INF146-188",
+      "course_code": "INF146",
+      "course_name": "Sistem Pendukung Keputusan (IT-5D)",
+      "lecturer_id": "0018018508",
+      "room_code": "R3",
+      "day_of_week": 3,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "24552010116",
+        "24552010117",
+        "24552010118",
+        "24552010119",
+        "24552010120"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5D-INF154-189",
+      "course_code": "INF154",
+      "course_name": "Digital Business Project (IT-5D)",
+      "lecturer_id": "0033018503",
+      "room_code": "L3",
+      "day_of_week": 3,
+      "start_time": "14:00:00",
+      "end_time": "16:30:00",
+      "enrolled_students": [
+        "24552010116",
+        "24552010117",
+        "24552010118",
+        "24552010119",
+        "24552010120"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5D-INF150-190",
+      "course_code": "INF150",
+      "course_name": "Pengolahan Citra (IT-5D)",
+      "lecturer_id": "0034018504",
+      "room_code": "R3",
+      "day_of_week": 3,
+      "start_time": "16:45:00",
+      "end_time": "18:45:00",
+      "enrolled_students": [
+        "24552010116",
+        "24552010117",
+        "24552010118",
+        "24552010119",
+        "24552010120"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5D-INF149-191",
+      "course_code": "INF149",
+      "course_name": "E-Commerce (IT-5D)",
+      "lecturer_id": "0038018508",
+      "room_code": "R4",
+      "day_of_week": 5,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010116",
+        "24552010117",
+        "24552010118",
+        "24552010119",
+        "24552010120"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5D-INF151-192",
+      "course_code": "INF151",
+      "course_name": "Perencanaan Bisnis (IT-5D)",
+      "lecturer_id": "0027018507",
+      "room_code": "R3",
+      "day_of_week": 6,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010116",
+        "24552010117",
+        "24552010118",
+        "24552010119",
+        "24552010120"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5E-INF145-193",
+      "course_code": "INF145",
+      "course_name": "Data Mining (IT-5E)",
+      "lecturer_id": "0018018508",
+      "room_code": "R3",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010121",
+        "24552010122",
+        "24552010123",
+        "24552010124",
+        "24552010125"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5E-INF152-194",
+      "course_code": "INF152",
+      "course_name": "Perancangan Film (IT-5E)",
+      "lecturer_id": "0037018507",
+      "room_code": "L3",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010121",
+        "24552010122",
+        "24552010123",
+        "24552010124",
+        "24552010125"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5E-INF153-195",
+      "course_code": "INF153",
+      "course_name": "Desain Media Interaktif (IT-5E)",
+      "lecturer_id": "0037018507",
+      "room_code": "L3",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010121",
+        "24552010122",
+        "24552010123",
+        "24552010124",
+        "24552010125"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5E-INF149-196",
+      "course_code": "INF149",
+      "course_name": "E-Commerce (IT-5E)",
+      "lecturer_id": "0038018508",
+      "room_code": "R1",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010121",
+        "24552010122",
+        "24552010123",
+        "24552010124",
+        "24552010125"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5E-INF146-197",
+      "course_code": "INF146",
+      "course_name": "Sistem Pendukung Keputusan (IT-5E)",
+      "lecturer_id": "0018018508",
+      "room_code": "R3",
+      "day_of_week": 4,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "24552010121",
+        "24552010122",
+        "24552010123",
+        "24552010124",
+        "24552010125"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5E-INF154-198",
+      "course_code": "INF154",
+      "course_name": "Digital Business Project (IT-5E)",
+      "lecturer_id": "0033018503",
+      "room_code": "L3",
+      "day_of_week": 4,
+      "start_time": "14:00:00",
+      "end_time": "16:30:00",
+      "enrolled_students": [
+        "24552010121",
+        "24552010122",
+        "24552010123",
+        "24552010124",
+        "24552010125"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5E-INF150-199",
+      "course_code": "INF150",
+      "course_name": "Pengolahan Citra (IT-5E)",
+      "lecturer_id": "0003018503",
+      "room_code": "R2",
+      "day_of_week": 6,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010121",
+        "24552010122",
+        "24552010123",
+        "24552010124",
+        "24552010125"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5E-INF151-200",
+      "course_code": "INF151",
+      "course_name": "Perencanaan Bisnis (IT-5E)",
+      "lecturer_id": "0027018507",
+      "room_code": "R4",
+      "day_of_week": 6,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "24552010121",
+        "24552010122",
+        "24552010123",
+        "24552010124",
+        "24552010125"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5F-INF145-201",
+      "course_code": "INF145",
+      "course_name": "Data Mining (IT-5F)",
+      "lecturer_id": "0018018508",
+      "room_code": "R3",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010126",
+        "24552010127",
+        "24552010128",
+        "24552010129",
+        "24552010130"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5F-INF154-202",
+      "course_code": "INF154",
+      "course_name": "Digital Business Project (IT-5F)",
+      "lecturer_id": "0033018503",
+      "room_code": "L3",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010126",
+        "24552010127",
+        "24552010128",
+        "24552010129",
+        "24552010130"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5F-INF146-203",
+      "course_code": "INF146",
+      "course_name": "Sistem Pendukung Keputusan (IT-5F)",
+      "lecturer_id": "0018018508",
+      "room_code": "R6",
+      "day_of_week": 4,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010126",
+        "24552010127",
+        "24552010128",
+        "24552010129",
+        "24552010130"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5F-INF149-204",
+      "course_code": "INF149",
+      "course_name": "E-Commerce (IT-5F)",
+      "lecturer_id": "0038018508",
+      "room_code": "R2",
+      "day_of_week": 5,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010126",
+        "24552010127",
+        "24552010128",
+        "24552010129",
+        "24552010130"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5F-INF155-205",
+      "course_code": "INF155",
+      "course_name": "Internet of Things (IT-5F)",
+      "lecturer_id": "0021018501",
+      "room_code": "R4",
+      "day_of_week": 5,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "24552010126",
+        "24552010127",
+        "24552010128",
+        "24552010129",
+        "24552010130"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5F-INF150-206",
+      "course_code": "INF150",
+      "course_name": "Pengolahan Citra (IT-5F)",
+      "lecturer_id": "0003018503",
+      "room_code": "R3",
+      "day_of_week": 6,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "24552010126",
+        "24552010127",
+        "24552010128",
+        "24552010129",
+        "24552010130"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5F-INF156-207",
+      "course_code": "INF156",
+      "course_name": "Embedded System (IT-5F)",
+      "lecturer_id": "0021018501",
+      "room_code": "R3",
+      "day_of_week": 6,
+      "start_time": "10:45:00",
+      "end_time": "13:15:00",
+      "enrolled_students": [
+        "24552010126",
+        "24552010127",
+        "24552010128",
+        "24552010129",
+        "24552010130"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT5F-INF151-208",
+      "course_code": "INF151",
+      "course_name": "Perencanaan Bisnis (IT-5F)",
+      "lecturer_id": "0027018507",
+      "room_code": "R3",
+      "day_of_week": 6,
+      "start_time": "14:00:00",
+      "end_time": "16:30:00",
+      "enrolled_students": [
+        "24552010126",
+        "24552010127",
+        "24552010128",
+        "24552010129",
+        "24552010130"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT7A-INF157-209",
+      "course_code": "INF157",
+      "course_name": "Kapita Selekta Informatika (IT-7A)",
+      "lecturer_id": "0034018504",
+      "room_code": "R4",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "23552010131",
+        "23552010132",
+        "23552010133",
+        "23552010134",
+        "23552010135"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT7B-INF157-210",
+      "course_code": "INF157",
+      "course_name": "Kapita Selekta Informatika (IT-7B)",
+      "lecturer_id": "0034018504",
+      "room_code": "R4",
+      "day_of_week": 1,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "23552010136",
+        "23552010137",
+        "23552010138",
+        "23552010139",
+        "23552010140"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT7C-INF157-211",
+      "course_code": "INF157",
+      "course_name": "Kapita Selekta Informatika (IT-7C)",
+      "lecturer_id": "0034018504",
+      "room_code": "R4",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "23552010141",
+        "23552010142",
+        "23552010143",
+        "23552010144",
+        "23552010145"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT7D-INF157-212",
+      "course_code": "INF157",
+      "course_name": "Kapita Selekta Informatika (IT-7D)",
+      "lecturer_id": "0034018504",
+      "room_code": "R4",
+      "day_of_week": 2,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "23552010146",
+        "23552010147",
+        "23552010148",
+        "23552010149",
+        "23552010150"
+      ]
+    },
+    {
+      "external_schedule_id": "SCH-2026-IT7E-INF157-213",
+      "course_code": "INF157",
+      "course_name": "Kapita Selekta Informatika (IT-7E)",
+      "lecturer_id": "0034018504",
+      "room_code": "R3",
+      "day_of_week": 3,
+      "start_time": "08:00:00",
+      "end_time": "10:30:00",
+      "enrolled_students": [
+        "23552010151",
+        "23552010152",
+        "23552010153",
+        "23552010154",
+        "23552010155"
+      ]
+    }
+  ]
+}

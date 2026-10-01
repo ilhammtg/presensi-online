@@ -56,9 +56,9 @@ services:
       target: mock-campus-api
     container_name: presensi_mock_api
     restart: unless-stopped
+    env_file: ./backend/.env
     environment:
       APP_PORT: "9001"
-      AES_KEY_HEX: ${AES_KEY_HEX:-0000000000000000000000000000000000000000000000000000000000000000}
     ports:
       - "9001:9001"
     depends_on:

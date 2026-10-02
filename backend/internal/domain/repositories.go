@@ -58,6 +58,8 @@ type ClassScheduleRepository interface {
 	FindTodayByStudent(ctx context.Context, studentID uuid.UUID, dayOfWeek int) ([]*ClassSchedule, error)
 	// FindByLecturerWithDetails returns all schedules taught by lecturer with room, building, student count.
 	FindByLecturerWithDetails(ctx context.Context, lecturerID uuid.UUID) ([]*ClassScheduleDetail, error)
+	// FindByStudentWithDetails returns all enrolled schedules for a student with room, building, lecturer, and active session status.
+	FindByStudentWithDetails(ctx context.Context, studentID uuid.UUID) ([]*ClassScheduleDetail, error)
 }
 
 // StudyPlanRepository defines persistence operations for StudyPlan (KRS).

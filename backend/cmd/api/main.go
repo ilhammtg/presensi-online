@@ -155,6 +155,13 @@ func main() {
 				dosen.POST("/permissions/:id/approve", sessionHandler.ApproveDosenPermission)
 			}
 
+			// Mahasiswa Schedules (jadwal kuliah berdasarkan KRS enrollment)
+			mahasiswa := protected.Group("/mahasiswa")
+			mahasiswa.Use(authmw.RequireRoles(domain.RoleMahasiswa))
+			{
+				mahasiswa.GET("/schedules", sessionHandler.GetMahasiswaSchedules)
+			}
+
 			// Schedules Details (Students, Sessions history, Recap)
 			schedules := protected.Group("/schedules")
 			{

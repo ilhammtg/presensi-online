@@ -233,6 +233,26 @@ func (h *SessionHandler) GetDosenSchedules(c *gin.Context) {
 	})
 }
 
+// GetMahasiswaSchedules handles GET /v1/mahasiswa/schedules.
+// Returns all enrolled class schedules for the authenticated mahasiswa (student).
+func (h *SessionHandler) GetMahasiswaSchedules(c *gin.Context) {
+	studentID, ok := authmw.GetUserID(c)
+	if !ok {
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "unauthorized"})
+		return
+	}
+
+	schedules, err := h.sessionUC.GetMahasiswaSchedules(c.Request.Context(), studentID)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{
+		"schedules": schedules,
+	})
+}
+
 // GetScheduleStudents handles GET /v1/schedules/:id/students.
 func (h *SessionHandler) GetScheduleStudents(c *gin.Context) {
 	idStr := c.Param("id")

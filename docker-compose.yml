@@ -17,6 +17,8 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    networks:
+      - presensi_net
 
   redis:
     image: redis:7-alpine
@@ -24,7 +26,7 @@ services:
     restart: unless-stopped
     command: redis-server --requirepass ${REDIS_PASSWORD:-redis_secret} --appendonly yes
     ports:
-      - "6380:6379"  # Host port 6380 (6379 already in use by another container)
+      - "6399:6379"  # Host port 6399 (6379, 6380 already in use by other containers)
     volumes:
       - redis_data:/data
     healthcheck:
@@ -32,6 +34,8 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    networks:
+      - presensi_net
 
   # ─────────────────────────── DATABASE MIGRATIONS ────────────────
   migration:
@@ -39,14 +43,24 @@ services:
     container_name: presensi_migration
     volumes:
       - ./backend/migrations:/migrations
+    # Jalankan migrate up; auto-clean dirty state jika ada
+    entrypoint: ["/bin/sh", "-c"]
     command:
-      - -path=/migrations
-      - -database=postgres://${POSTGRES_USER:-presensi_user}:${POSTGRES_PASSWORD:-presensi_secret}@postgres:5432/${POSTGRES_DB:-presensi_db}?sslmode=disable
-      - up
+      - |
+        DB_URL="postgres://${POSTGRES_USER:-presensi_user}:${POSTGRES_PASSWORD:-presensi_secret}@postgres:5432/${POSTGRES_DB:-presensi_db}?sslmode=disable"
+        STATUS=$$(migrate -path=/migrations -database="$$DB_URL" version 2>&1 || true)
+        if echo "$$STATUS" | grep -qi "dirty"; then
+          VER=$$(echo "$$STATUS" | grep -o '[0-9]\+' | head -1)
+          echo "Database is dirty at version $$VER, forcing version $$VER..."
+          migrate -path=/migrations -database="$$DB_URL" force "$$VER" || true
+        fi
+        migrate -path=/migrations -database="$$DB_URL" up
     depends_on:
       postgres:
         condition: service_healthy
     restart: "no"
+    networks:
+      - presensi_net
 
   # ─────────────────────────── BACKEND SERVICES ───────────────────
   mock-campus-api:
@@ -64,6 +78,8 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
+    networks:
+      - presensi_net
 
   api:
     build:
@@ -83,6 +99,10 @@ services:
     depends_on:
       redis:
         condition: service_healthy
+      migration:
+        condition: service_completed_successfully
+    networks:
+      - presensi_net
 
   worker:
     build:
@@ -101,6 +121,10 @@ services:
         condition: service_healthy
       mock-campus-api:
         condition: service_started
+      migration:
+        condition: service_completed_successfully
+    networks:
+      - presensi_net
 
   # ─────────────────────────── FRONTEND WEB DASHBOARD ──────────────
   web-dashboard:
@@ -114,6 +138,12 @@ services:
       - "3000:80"
     depends_on:
       - api
+    networks:
+      - presensi_net
+
+networks:
+  presensi_net:
+    driver: bridge
 
 volumes:
   postgres_data:

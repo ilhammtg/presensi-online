@@ -246,6 +246,70 @@ func (r *ClassScheduleRepo) FindByLecturerWithDetails(ctx context.Context, lectu
 	return list, rows.Err()
 }
 
+// FindByStudentWithDetails retrieves all enrolled class schedules for a student via study_plans,
+// enriched with room, building, lecturer name, student count, and active session status.
+func (r *ClassScheduleRepo) FindByStudentWithDetails(ctx context.Context, studentID uuid.UUID) ([]*domain.ClassScheduleDetail, error) {
+	today := time.Now()
+	todayDayOfWeek := int(today.Weekday())
+	if todayDayOfWeek == 0 {
+		todayDayOfWeek = 7
+	}
+
+	rows, err := r.db.Query(ctx, `
+		SELECT 
+			cs.id, cs.course_code, cs.course_name, cs.academic_year, cs.semester_type,
+			cs.lecturer_id, cs.room_id, r.name AS room_name, b.name AS building_name,
+			cs.day_of_week,
+			to_char(cs.start_time, 'HH24:MI') AS start_time_str,
+			to_char(cs.end_time, 'HH24:MI') AS end_time_str,
+			(SELECT COUNT(*) FROM study_plans sp2 WHERE sp2.schedule_id = cs.id AND sp2.status = 'active') AS enrolled_count,
+			sess.id AS active_session_id,
+			COALESCE((SELECT MAX(csess.meeting_no) FROM class_sessions csess WHERE csess.schedule_id = cs.id), 0) + 1 AS next_meeting_no
+		FROM study_plans sp
+		JOIN class_schedules cs ON sp.schedule_id = cs.id
+		JOIN rooms r ON cs.room_id = r.id
+		JOIN buildings b ON r.building_id = b.id
+		LEFT JOIN class_sessions sess ON sess.schedule_id = cs.id AND sess.is_open = TRUE
+		WHERE sp.student_id = $1 AND sp.status = 'active'
+		  AND cs.is_active = TRUE AND cs.deleted_at IS NULL
+		ORDER BY cs.day_of_week ASC, cs.start_time ASC
+	`, studentID)
+	if err != nil {
+		return nil, fmt.Errorf("ClassScheduleRepo.FindByStudentWithDetails: %w", err)
+	}
+	defer rows.Close()
+
+	dayNames := map[int]string{
+		1: "Senin", 2: "Selasa", 3: "Rabu", 4: "Kamis", 5: "Jumat", 6: "Sabtu", 7: "Minggu",
+	}
+
+	var list []*domain.ClassScheduleDetail
+	for rows.Next() {
+		d := &domain.ClassScheduleDetail{}
+		var activeSessID *uuid.UUID
+		err := rows.Scan(
+			&d.ID, &d.CourseCode, &d.CourseName, &d.AcademicYear, &d.SemesterType,
+			&d.LecturerID, &d.RoomID, &d.RoomName, &d.BuildingName,
+			&d.DayOfWeek, &d.StartTime, &d.EndTime,
+			&d.EnrolledCount, &activeSessID, &d.NextMeetingNo,
+		)
+		if err != nil {
+			return nil, err
+		}
+
+		d.ClassUnit = "Unit 01"
+		d.DayName = dayNames[d.DayOfWeek]
+		d.IsToday = (d.DayOfWeek == todayDayOfWeek)
+		if activeSessID != nil {
+			d.HasActiveSession = true
+			d.ActiveSessionID = activeSessID
+		}
+
+		list = append(list, d)
+	}
+	return list, rows.Err()
+}
+
 func (r *ClassScheduleRepo) scanOne(ctx context.Context, where string, args ...interface{}) (*domain.ClassSchedule, error) {
 	q := `SELECT id, external_id, course_code, course_name, academic_year, semester_type,
 		         lecturer_id, room_id, day_of_week, start_time, end_time, is_active,

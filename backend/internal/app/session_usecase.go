@@ -287,6 +287,11 @@ func (uc *SessionUseCase) GetDosenSchedules(ctx context.Context, lecturerID uuid
 	return uc.scheduleRepo.FindByLecturerWithDetails(ctx, lecturerID)
 }
 
+// GetMahasiswaSchedules returns all enrolled schedules for a mahasiswa (student) with details.
+func (uc *SessionUseCase) GetMahasiswaSchedules(ctx context.Context, studentID uuid.UUID) ([]*domain.ClassScheduleDetail, error) {
+	return uc.scheduleRepo.FindByStudentWithDetails(ctx, studentID)
+}
+
 // GetEnrolledStudents returns all students enrolled in a class schedule.
 func (uc *SessionUseCase) GetEnrolledStudents(ctx context.Context, scheduleID uuid.UUID) ([]*domain.EnrolledStudent, error) {
 	return uc.studyPlanRepo.FindEnrolledStudentsByScheduleID(ctx, scheduleID)

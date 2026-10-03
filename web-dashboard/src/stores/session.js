@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 import { useAuthStore } from './auth'
+import { wsUrl } from '../lib/api'
 
 export const useSessionStore = defineStore('session', () => {
   const authStore = useAuthStore()
@@ -309,12 +310,10 @@ export const useSessionStore = defineStore('session', () => {
   function connectWebSocket(sessionId) {
     disconnectWebSocket()
 
-    const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:'
-    const host = window.location.host
-    const wsUrl = `${protocol}//${host}/v1/ws?token=${authStore.token}&session_id=${sessionId}`
+    const targetWsUrl = wsUrl(`/v1/ws?token=${authStore.token}&session_id=${sessionId}`)
 
     try {
-      ws = new WebSocket(wsUrl)
+      ws = new WebSocket(targetWsUrl)
 
       ws.onopen = () => {
         wsConnected.value = true

@@ -1,0 +1,41 @@
+===== BUG TRACKER — Presensi Online =====
+Last updated: 2026-10-03
+
+--------------------------------------------------
+[FIXED - 2026-10-03] KTM belum ada data nya..
+  Fix: KTM card sekarang menampilkan prodiName dan facultyName dari API
+  (fallback hardcoded 'S1 Informatika' dihapus → diganti '-').
+  Tahun akademik sekarang dihitung dinamis berdasarkan bulan/tahun saat ini.
+  Foto mahasiswa masih placeholder (fitur foto belum tersedia di backend).
+
+--------------------------------------------------
+[FIXED - 2026-10-03] Bug jadwal hari ini salah (Sabtu muncul Jumat)
+  Fix Flutter: Hapus OR fallback DateFormatter.isToday() di schedule_model.dart.
+  Sekarang hanya pakai nilai is_today dari backend (yang sudah timezone WIB).
+  Terverifikasi: is_today=True hanya untuk day_of_week=6 di hari Sabtu.
+
+--------------------------------------------------
+[FIXED - 2026-10-03] Profil beberapa variabel masih null
+  Fix: prodiName dan facultyName sudah ada null-safety di mahasiswa & dosen profile.
+  Backend fix: lecturer_name sekarang di-JOIN dari tabel users di kedua query
+  FindByLecturerWithDetails & FindByStudentWithDetails.
+
+--------------------------------------------------
+[FIXED - 2026-10-03] Role dosen: verifikasi pengajuan izin/sakit di profile
+  Fix: Menu verifikasi izin/sakit sudah dihapus dari dosen_profile_screen.dart.
+  Hanya tersisa: Manual Override Presensi + Keamanan & Sandi.
+
+--------------------------------------------------
+[FIXED - 2026-10-03] Manual override presensi tidak bisa diakses
+  Fix: DosenManualOverrideScreen sudah ada dan bisa diakses dari profil dosen.
+
+--------------------------------------------------
+[FIXED - 2026-10-03] ERROR: column "duration_minutes" does not exist (SQLSTATE 42703)
+  Fix: Migration 000010_add_session_duration_and_expires.up.sql sudah diterapkan
+  ke DB lokal (local Docker) dan Supabase (production). Kolom ada di kedua DB.
+  Terverifikasi: API sudah bisa menerima request buat sesi tanpa error DB.
+
+--------------------------------------------------
+[FIXED - 2026-10-03] Data tidak masuk ke database / perlu migrasi ulang
+  Fix: Semua 10 migration sudah diterapkan. DB lokal dan Supabase di versi 10.
+

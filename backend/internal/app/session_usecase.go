@@ -85,12 +85,9 @@ func (uc *SessionUseCase) OpenSession(ctx context.Context, req OpenSessionReques
 		return nil, domain.ErrForbidden
 	}
 
-	// Verify schedule is scheduled for today
-	now := time.Now()
-	todayDayOfWeek := int(now.Weekday())
-	if todayDayOfWeek == 0 {
-		todayDayOfWeek = 7
-	}
+	// Verify schedule is scheduled for today (WIB timezone)
+	now := domain.NowWIB()
+	todayDayOfWeek := domain.CurrentDayOfWeek()
 	if schedule.DayOfWeek != todayDayOfWeek {
 		return nil, domain.ErrScheduleNotToday
 	}

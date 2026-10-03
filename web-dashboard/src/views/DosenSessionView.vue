@@ -453,34 +453,21 @@
                       <td>
                         <!-- When Attendance is ACTIVE: Provide direct Izin/Sakit buttons -->
                         <div v-if="session.currentSession" class="action-btn-row">
-                          <!-- 1. If student submitted via mobile app and is pending -->
-                          <template v-if="attendanceByStudentId[student.student_id]?.submission_source === 'app_request' && !attendanceByStudentId[student.student_id]?.verified_by_lecturer">
-                            <button v-if="attendanceByStudentId[student.student_id]?.attachment_url" class="btn btn-outline-primary btn-xs" @click="openAttachmentPreview(attendanceByStudentId[student.student_id].attachment_url)" title="Lihat surat dokter/dispensasi">
-                              <i class="fas fa-paperclip"></i> Bukti
-                            </button>
-                            <button class="btn btn-success btn-xs" @click="handleApprovalAction(attendanceByStudentId[student.student_id], 'approve')" :disabled="approvalActionLoading" title="Setujui permohonan izin">
-                              <i class="fas fa-check"></i> Setujui
-                            </button>
-                            <button class="btn btn-danger btn-xs" @click="handleApprovalAction(attendanceByStudentId[student.student_id], 'reject')" :disabled="approvalActionLoading" title="Tolak permohonan (alpa)">
-                              <i class="fas fa-times"></i> Tolak
-                            </button>
-                          </template>
-
-                          <!-- 2. If student is already marked Izin or Sakit: Allow editing reason -->
-                          <template v-else-if="attendanceByStudentId[student.student_id]?.status === 'izin' || attendanceByStudentId[student.student_id]?.status === 'sakit'">
+                          <!-- 1. If student is already marked Izin or Sakit: Allow editing reason -->
+                          <template v-if="attendanceByStudentId[student.student_id]?.status === 'izin' || attendanceByStudentId[student.student_id]?.status === 'sakit'">
                             <button class="btn btn-outline-secondary btn-xs" @click="openPermissionModal(student, attendanceByStudentId[student.student_id]?.status)" title="Ubah keterangan izin/sakit">
                               <i class="fas fa-edit"></i> Ubah Izin
                             </button>
                           </template>
 
-                          <!-- 3. If student already scanned Hadir/Terlambat -->
+                          <!-- 2. If student already scanned Hadir/Terlambat: Allow correction -->
                           <template v-else-if="attendanceByStudentId[student.student_id]?.status === 'hadir' || attendanceByStudentId[student.student_id]?.status === 'terlambat'">
                             <button class="btn btn-outline-secondary btn-xs text-muted" @click="openPermissionModal(student, 'izin')" title="Koreksi presensi mahasiswa ke Izin/Sakit">
                               <i class="fas fa-pen"></i> Koreksi
                             </button>
                           </template>
 
-                          <!-- 4. Default: Student hasn't attended yet: Give direct Hadir, Izin and Sakit buttons -->
+                          <!-- 3. Default: Student hasn't attended yet: Give direct Hadir, Izin and Sakit buttons -->
                           <template v-else>
                             <button 
                               class="btn btn-outline-success btn-xs btn-row-hadir"
@@ -843,7 +830,7 @@ const searchStudentQuery = ref('')
 const studentStatusFilter = ref('all') // 'all' | 'belum' | 'hadir' | 'izin'
 
 const previewAttachmentUrl = ref('')
-const approvalActionLoading = ref(false)
+
 
 const showFullscreenQR = ref(false)
 const showCloseModal = ref(false)
@@ -1034,8 +1021,7 @@ onMounted(async () => {
   pageError.value = ''
   window.addEventListener('keydown', handleKeyDown)
 
-  // 0. Pre-fetch permissions for counter badges
-  session.fetchPermissions()
+  // 0. Jadwal dosen dimuat di bawah
 
   // 1. Fetch lecturer schedules
   const scheds = await session.fetchDosenSchedules()
@@ -1218,29 +1204,7 @@ async function handleRefreshRecap() {
   }
 }
 
-async function handleApprovalAction(perm, action) {
-  if (!perm) return
-  approvalActionLoading.value = true
-  pageError.value = ''
-  try {
-    const isApprove = action === 'approve'
-    const attId = perm.attendance_id || perm.id
-    await session.approvePermission(attId, action)
-    const studentName = perm.student_name || 'Mahasiswa'
-    successMsg.value = isApprove 
-      ? `Permohonan izin untuk ${studentName} telah disetujui.`
-      : `Permohonan izin untuk ${studentName} telah ditolak (dicatat Alpa).`
-    
-    // Refresh attendees if active session is currently running
-    if (session.currentSession) {
-      await session.fetchAttendees(session.currentSession.id || session.currentSession.ID)
-    }
-  } catch (err) {
-    pageError.value = err.message
-  } finally {
-    approvalActionLoading.value = false
-  }
-}
+// handleApprovalAction dihapus — pengajuan izin via aplikasi tidak digunakan
 
 function openAttachmentPreview(url) {
   previewAttachmentUrl.value = url

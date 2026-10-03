@@ -27,7 +27,7 @@
           <!-- Form -->
           <form @submit.prevent="handleLogin" class="login-form">
             <div class="form-group">
-              <label for="username">NPM (Mahasiswa) / NIDN (Dosen) / Username</label>
+              <label for="username">Username</label>
               <div class="input-group">
                 <i class="fas fa-id-card input-icon"></i>
                 <input 
@@ -35,13 +35,10 @@
                   type="text" 
                   v-model="username" 
                   class="input-field input-with-icon font-mono" 
-                  placeholder="Contoh: 25552010096 atau 0002018502" 
+                  placeholder="Username" 
                   required
                 />
               </div>
-              <span class="text-xs text-muted" style="margin-top: 4px; display: block;">
-                Login default kampus menggunakan Nomor Pokok Mahasiswa (NPM) atau NIDN Dosen.
-              </span>
             </div>
 
             <div class="form-group">
@@ -50,12 +47,20 @@
                 <i class="fas fa-lock input-icon"></i>
                 <input 
                   id="password"
-                  type="password" 
+                  :type="showPassword ? 'text' : 'password'" 
                   v-model="password" 
-                  class="input-field input-with-icon" 
+                  class="input-field input-with-icon input-with-icon-right" 
                   placeholder="Masukkan kata sandi" 
                   required
                 />
+                <button
+                  type="button"
+                  class="toggle-password"
+                  @click="showPassword = !showPassword"
+                  :title="showPassword ? 'Sembunyikan kata sandi' : 'Tampilkan kata sandi'"
+                >
+                  <i :class="showPassword ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
+                </button>
               </div>
             </div>
 
@@ -87,6 +92,7 @@ const router = useRouter()
 
 const username = ref('')
 const password = ref('')
+const showPassword = ref(false)
 
 async function handleLogin() {
   const success = await auth.login(username.value, password.value)
@@ -226,5 +232,40 @@ async function handleLogin() {
   margin-top: 20px;
   font-size: 0.75rem;
   color: var(--text-dim);
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-with-icon-right {
+  padding-right: 42px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 12px;
+  height: calc(100% - 2px);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s ease;
+}
+
+.toggle-password:hover {
+  color: var(--brand-primary);
+}
+
+.toggle-password i {
+  font-size: 0.9rem;
+  pointer-events: none;
 }
 </style>

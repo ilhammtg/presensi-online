@@ -8,6 +8,7 @@ services:
       POSTGRES_DB: ${POSTGRES_DB:-presensi_db}
       POSTGRES_USER: ${POSTGRES_USER:-presensi_user}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-presensi_secret}
+      TZ: Asia/Jakarta
     ports:
       - "5434:5432"  # Host port 5434 (5432 & 5433 already in use)
     volumes:
@@ -72,6 +73,7 @@ services:
     restart: unless-stopped
     env_file: ./backend/.env
     environment:
+      TZ: Asia/Jakarta
       APP_PORT: "9001"
     ports:
       - "9001:9001"
@@ -90,6 +92,7 @@ services:
     restart: unless-stopped
     env_file: ./backend/.env
     environment:
+      TZ: Asia/Jakarta
       REDIS_HOST: redis
       REDIS_PORT: "6379"
       MOCK_CAMPUS_API_URL: http://mock-campus-api:9001
@@ -113,6 +116,7 @@ services:
     restart: unless-stopped
     env_file: ./backend/.env
     environment:
+      TZ: Asia/Jakarta
       REDIS_HOST: redis
       REDIS_PORT: "6379"
       MOCK_CAMPUS_API_URL: http://mock-campus-api:9001

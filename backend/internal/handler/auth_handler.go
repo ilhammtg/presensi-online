@@ -105,17 +105,36 @@ func (h *AuthHandler) Login(c *gin.Context) {
 		return
 	}
 
+	profile, err := h.userRepo.GetProfile(ctx, user.ID)
+	var userPayload gin.H
+	if err == nil && profile != nil {
+		userPayload = gin.H{
+			"id":           profile.ID,
+			"external_id":  profile.ExternalID,
+			"name":         profile.Name,
+			"email":        profile.Email,
+			"role":         profile.Role,
+			"prodi_id":     profile.ProdiID,
+			"prodi_name":   profile.ProdiName,
+			"faculty_name": profile.FacultyName,
+			"avatar_url":   profile.AvatarURL,
+		}
+	} else {
+		userPayload = gin.H{
+			"id":          user.ID,
+			"external_id": user.ExternalID,
+			"name":        user.Name,
+			"email":       user.Email,
+			"role":        user.Role,
+			"prodi_id":    user.ProdiID,
+		}
+	}
+
 	c.JSON(http.StatusOK, gin.H{
 		"access_token":  tokens.AccessToken,
 		"refresh_token": tokens.RefreshToken,
 		"expires_at":    tokens.ExpiresAt,
-		"user": gin.H{
-			"id":         user.ID,
-			"name":       user.Name,
-			"email":      user.Email,
-			"role":       user.Role,
-			"prodi_id":   user.ProdiID,
-		},
+		"user":          userPayload,
 	})
 }
 

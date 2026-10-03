@@ -151,10 +151,19 @@ POST /v1/attendance/scan
 | Web | Vue.js 3, Vite, Pinia, Tailwind (Fase 4) |
 | DevOps | Docker Compose, multi-stage Dockerfile |
 
+## Dokumentasi & Spesifikasi
+
+- [Spesifikasi Use Case Mobile & Arsitektur Anti-Fake GPS](dev-docs/USE_CASE_MOBILE_AND_ANTI_FAKE_GPS.md)
+- [Dokumentasi Basis Data & Schema](dev-docs/DATABASE_DOCUMENTATION.md)
+- [Diagram Relasi Entitas (ERD)](dev-docs/ERD.md)
+- [Software Requirement Specification (SRS)](dev-docs/docs.md)
+- [Sistem Desain UI/UX Almuslim](dev-docs/almuslim_absensi_ui_ux_design_system.md)
+
 ## Fase Pengembangan
 
 - [x] **Fase 1**: Backend Foundation & Database
-- [ ] **Fase 2**: Core Attendance Engine (WebSocket + QR rolling)
-- [ ] **Fase 3**: Flutter Mobile App
-- [ ] **Fase 4**: Vue.js Web Dashboard  
-- [ ] **Fase 5**: Security Hardening & Testing
+- [x] **Fase 2**: Core Attendance Engine (WebSocket + QR rolling)
+- [x] **Fase 3**: Flutter Mobile App
+- [x] **Fase 4**: Vue.js Web Dashboard  
+- [x] **Fase 5**: Security Hardening & Anti-Fake GPS (Zero-Trust)
+

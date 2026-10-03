@@ -8,11 +8,13 @@ CREATE TABLE IF NOT EXISTS class_sessions (
     meeting_no   SMALLINT    NOT NULL,            -- Pertemuan ke- (1–16)
     session_date DATE        NOT NULL DEFAULT CURRENT_DATE,
     qr_seed      VARCHAR(64) NOT NULL,            -- Seed TOTP untuk QR bergulir
-    is_open      BOOLEAN     NOT NULL DEFAULT TRUE,
-    opened_at    TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    closed_at    TIMESTAMPTZ,
-    bap_topic    TEXT,                            -- Catatan topik BAP
-    created_at   TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    is_open          BOOLEAN     NOT NULL DEFAULT TRUE,
+    opened_at        TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    closed_at        TIMESTAMPTZ,
+    expires_at       TIMESTAMPTZ,
+    duration_minutes INTEGER     DEFAULT 30,
+    bap_topic        TEXT,                            -- Catatan topik BAP
+    created_at       TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT uq_schedule_meeting UNIQUE (schedule_id, meeting_no)
 );
 

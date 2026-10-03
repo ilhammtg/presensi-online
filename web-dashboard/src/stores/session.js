@@ -365,58 +365,6 @@ export const useSessionStore = defineStore('session', () => {
     }
   }
 
-  const permissions = ref([])
-
-  async function fetchPermissions(status = 'all') {
-    loading.value = true
-    try {
-      const url = status === 'pending' ? '/v1/dosen/permissions?status=pending' : '/v1/dosen/permissions'
-      const res = await fetch(url, {
-        headers: { Authorization: `Bearer ${authStore.token}` }
-      })
-      if (!res.ok) throw new Error('Gagal mengambil daftar permohonan izin')
-      const data = await res.json()
-      permissions.value = data.permissions || []
-      return permissions.value
-    } catch (err) {
-      console.error('Failed to fetch permissions:', err)
-      return []
-    } finally {
-      loading.value = false
-    }
-  }
-
-  async function approvePermission(attendanceId, action, notes = '') {
-    loading.value = true
-    try {
-      const res = await fetch(`/v1/dosen/permissions/${attendanceId}/approve`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${authStore.token}`
-        },
-        body: JSON.stringify({ action, notes })
-      })
-      const data = await res.json()
-      if (!res.ok) throw new Error(data.error || 'Gagal memproses permohonan')
-
-      // Update item locally
-      const item = permissions.value.find(p => p.attendance_id === attendanceId)
-      if (item) {
-        item.verified_by_lecturer = true
-        if (action === 'reject') {
-          item.status = 'alpa'
-        }
-        if (notes) item.notes = notes
-      }
-      return data
-    } catch (err) {
-      error.value = err.message
-      throw err
-    } finally {
-      loading.value = false
-    }
-  }
 
   async function fetchScheduleStudents(scheduleId) {
     if (!scheduleId) return []
@@ -468,9 +416,6 @@ export const useSessionStore = defineStore('session', () => {
     fetchAttendees,
     overrideAttendance,
     connectWebSocket,
-    disconnectWebSocket,
-    permissions,
-    fetchPermissions,
-    approvePermission
+    disconnectWebSocket
   }
 })

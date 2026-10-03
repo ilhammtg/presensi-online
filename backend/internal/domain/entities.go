@@ -6,6 +6,23 @@ import (
 	"github.com/google/uuid"
 )
 
+// WIBLocation is Asia/Jakarta timezone (UTC+7) used across campus scheduling.
+var WIBLocation = time.FixedZone("WIB", 7*3600)
+
+// NowWIB returns current time in Asia/Jakarta timezone.
+func NowWIB() time.Time {
+	return time.Now().In(WIBLocation)
+}
+
+// CurrentDayOfWeek returns ISO-8601 day of week in WIB (1=Monday ... 7=Sunday).
+func CurrentDayOfWeek() int {
+	d := int(NowWIB().Weekday())
+	if d == 0 {
+		return 7
+	}
+	return d
+}
+
 // UserRole represents the role of a user in the system.
 type UserRole string
 
@@ -230,6 +247,7 @@ type ClassScheduleDetail struct {
 	AcademicYear     string     `json:"academic_year"`
 	SemesterType     int        `json:"semester_type"`
 	LecturerID       uuid.UUID  `json:"lecturer_id"`
+	LecturerName     string     `json:"lecturer_name"`
 	RoomID           uuid.UUID  `json:"room_id"`
 	RoomName         string     `json:"room_name"`
 	BuildingName     string     `json:"building_name"`

@@ -23,11 +23,8 @@ func NewProdiRepo(db *pgxpool.Pool) *ProdiRepo {
 
 // GetProdiOverview retrieves high-level statistical metrics for the given study program.
 func (r *ProdiRepo) GetProdiOverview(ctx context.Context, prodiID uuid.UUID) (*domain.ProdiOverview, error) {
-	// Current day of week (1=Senin ... 7=Minggu)
-	weekday := int(time.Now().Weekday())
-	if weekday == 0 {
-		weekday = 7
-	}
+	// Current day of week in WIB (1=Senin ... 7=Minggu)
+	weekday := domain.CurrentDayOfWeek()
 
 	overview := &domain.ProdiOverview{ProdiID: prodiID}
 
@@ -291,10 +288,7 @@ func (r *ProdiRepo) GetProdiClasses(ctx context.Context, prodiID uuid.UUID) ([]*
 
 // GetLiveTodayClasses retrieves real-time status of classes for today in the given study program.
 func (r *ProdiRepo) GetLiveTodayClasses(ctx context.Context, prodiID uuid.UUID) ([]*domain.ProdiLiveClassItem, error) {
-	weekday := int(time.Now().Weekday())
-	if weekday == 0 {
-		weekday = 7
-	}
+	weekday := domain.CurrentDayOfWeek()
 
 	query := `
 		SELECT 
